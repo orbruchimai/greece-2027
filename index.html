@@ -35,7 +35,7 @@ window.fileHost = Object.freeze({
     try {
       if (method === 'local.read') {
         var v = localStorage.getItem('greece2027.' + params.key);
-        return Promise.resolve(v == null ? { status: 'memory' } : { status: 'saved', value: v });
+        return Promise.resolve(v == null ? { status: 'saved' } : { status: 'saved', value: v });
       }
       if (method === 'local.write') {
         localStorage.setItem('greece2027.' + params.key, params.value);
