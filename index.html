@@ -27,7 +27,7 @@ body { padding: 0 0 32px; }
 <script>
 /* Standalone host shim: the kit expects a small host API for routing and
    device-local state. Routes stay in memory; local state persists in localStorage. */
-window.instinctFile = Object.freeze({
+window.fileHost = Object.freeze({
   initialRoute: '/',
   route: function () {},
   asset: function (v) { return v; },

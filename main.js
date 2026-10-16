@@ -7689,7 +7689,7 @@
       }) : window.classNames = a;
     })();
   });
-  var Ba = () => window.instinctFile;
+  var Ba = () => window.fileHost;
   function iu(e2, a) {
     let [t, o] = (0, import_react3.useState)({ scope: { key: e2, initialValue: a }, value: a, status: "loading", ready: false });
     t.scope.key !== e2 && o({ scope: { key: e2, initialValue: a }, value: a, status: "loading", ready: false });
@@ -8806,7 +8806,7 @@
   function Rd() {
     return (0, import_jsx_runtime13.jsx)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", children: (0, import_jsx_runtime13.jsx)("path", { d: "M20.5 12C20.5 9.76676 19.686 8.06004 18.2871 6.89355C16.8661 5.70886 14.7409 5 12 5C9.25912 5 7.13392 5.70886 5.71288 6.89355C4.31396 8.06004 3.49999 9.76677 3.49999 12C3.49999 12.4778 3.67754 13.2204 3.91698 13.9678C4.14619 14.6832 4.39417 15.2886 4.45995 15.4463C4.47153 15.474 4.45918 15.4447 4.47753 15.4883L4.51269 15.5781L4.55273 15.6973C4.71413 16.2258 4.88032 17.3955 4.10253 18.9609C4.45806 18.9447 4.80995 18.8667 5.14062 18.752C5.48117 18.6338 5.77064 18.4882 5.9746 18.3721C6.07544 18.3146 6.15337 18.2661 6.20312 18.2334C6.22792 18.2171 6.2459 18.2042 6.25585 18.1973C6.25889 18.1952 6.26114 18.1935 6.26269 18.1924C6.57078 17.9671 6.98047 17.9376 7.31835 18.1152C8.64944 18.8149 10.295 19 12 19C14.7409 19 16.8661 18.2911 18.2871 17.1064C19.686 15.94 20.5 14.2332 20.5 12ZM22.5 12C22.5 14.7665 21.4668 17.06 19.5674 18.6436C17.6898 20.2087 15.0646 21 12 21C10.3808 21 8.55858 20.8483 6.91699 20.1357C6.63773 20.2919 6.25326 20.4829 5.79589 20.6416C4.84476 20.9715 3.45924 21.2047 2.07226 20.5479C1.80018 20.419 1.59992 20.1742 1.52831 19.8818C1.45679 19.5894 1.52128 19.28 1.70312 19.04C2.39144 18.1322 2.60883 17.4279 2.66894 16.9775C2.72939 16.5244 2.63731 16.2736 2.63476 16.2666L2.63378 16.2646C2.63187 16.2601 2.63059 16.2546 2.62695 16.2461C2.62373 16.2386 2.61901 16.2282 2.61425 16.2168L2.61327 16.2158C2.53665 16.0321 2.2661 15.369 2.01269 14.5781C1.76944 13.8189 1.49999 12.8165 1.49999 12C1.49999 9.23347 2.5332 6.93995 4.43261 5.35645C6.31017 3.79128 8.93544 3 12 3C15.0646 3 17.6898 3.79129 19.5674 5.35645C21.4668 6.93996 22.5 9.23348 22.5 12Z" }) });
   }
-  var Bd = { idle: { icon: (0, import_jsx_runtime13.jsx)(Rd, {}), label: jo.label, shortLabel: "Buy this", variant: "active" }, sending: { icon: (0, import_jsx_runtime13.jsx)(oe2, { className: "file-spin", size: 16, strokeWidth: 2.25, "aria-hidden": "true" }), label: "Sending\u2026", variant: "disabled" }, sent: { icon: (0, import_jsx_runtime13.jsx)(Qe2, { size: 16, strokeWidth: 2.25, "aria-hidden": "true" }), label: "Sent to Instinct", shortLabel: "Sent", variant: "disabled" } };
+  var Bd = { idle: { icon: (0, import_jsx_runtime13.jsx)(Rd, {}), label: jo.label, shortLabel: "Buy this", variant: "active" }, sending: { icon: (0, import_jsx_runtime13.jsx)(oe2, { className: "file-spin", size: 16, strokeWidth: 2.25, "aria-hidden": "true" }), label: "Sending\u2026", variant: "disabled" }, sent: { icon: (0, import_jsx_runtime13.jsx)(Qe2, { size: 16, strokeWidth: 2.25, "aria-hidden": "true" }), label: "Sent", shortLabel: "Sent", variant: "disabled" } };
 
   // ../../opt/files/node_modules/react-router/dist/development/chunk-BV7QT456.mjs
   var React = __toESM(require_react(), 1);
@@ -11495,17 +11495,17 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     const location = useLocation();
     const navigate = useNavigate();
     (0, import_react22.useEffect)(() => {
-      window.instinctFile.route(location.pathname + location.search + location.hash);
+      window.fileHost.route(location.pathname + location.search + location.hash);
     }, [location]);
     (0, import_react22.useEffect)(() => {
       const restore = (event) => navigate(event.detail, { replace: true });
-      window.addEventListener("instinct-route", restore);
-      return () => window.removeEventListener("instinct-route", restore);
+      window.addEventListener("file-route", restore);
+      return () => window.removeEventListener("file-route", restore);
     }, [navigate]);
     return null;
   }
   function FileRouter({ children }) {
-    return /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)(MemoryRouter, { initialEntries: [window.instinctFile.initialRoute], children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)(MemoryRouter, { initialEntries: [window.fileHost.initialRoute], children: [
       /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(RouteBridge, {}),
       children
     ] });
