@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>יוון 2027</title>
+<meta name="description" content="העמוד המשפחתי לקראת הטיול ביוון - אוגוסט 2027">
+<meta property="og:type" content="website">
+<meta property="og:title" content="יוון 2027">
+<meta property="og:description" content="העמוד המשפחתי לקראת הטיול ביוון - אוגוסט 2027">
+<meta property="og:image" content="https://orbruchimai.github.io/greece-2027/assets/VTH26NTY.jpg">
+<meta name="theme-color" content="#f4efec">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇬🇷</text></svg>">
+<link rel="stylesheet" href="main.css">
+<style>
+html, body { margin: 0; background: #f4efec; }
+/* The kit stylesheet pins #root to a fixed viewport scroller for the app shell;
+   as a standalone page the document must grow with its content. */
+html, body, #root { position: static !important; height: auto !important; overflow: visible !important; overflow-x: clip !important; overscroll-behavior: auto !important; }
+body { padding: 0 0 32px; }
+@media (min-width: 760px) { body { padding-top: 32px; } }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+/* Standalone host shim: the kit expects a small host API for routing and
+   device-local state. Routes stay in memory; local state persists in localStorage. */
+window.instinctFile = Object.freeze({
+  initialRoute: '/',
+  route: function () {},
+  asset: function (v) { return v; },
+  request: function (method, params) {
+    try {
+      if (method === 'local.read') {
+        var v = localStorage.getItem('greece2027.' + params.key);
+        return Promise.resolve(v == null ? { status: 'memory' } : { status: 'saved', value: v });
+      }
+      if (method === 'local.write') {
+        localStorage.setItem('greece2027.' + params.key, params.value);
+        return Promise.resolve({ status: 'saved' });
+      }
+    } catch (e) {
+      return Promise.resolve({ status: 'unavailable' });
+    }
+    return Promise.resolve({ status: 'unavailable' });
+  }
+});
+</script>
+<script src="main.js" crossorigin="anonymous"></script>
+</body>
+</html>
