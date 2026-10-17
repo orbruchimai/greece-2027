@@ -12781,15 +12781,21 @@ ${text.trim()}`;
   function Dict() {
     const [noVoice, setNoVoice] = (0, import_react23.useState)(false);
     const [speaking, setSpeaking] = (0, import_react23.useState)(null);
-    const [heard, setHeard] = (0, import_react23.useState)(() => new Set());
+    const [heard, setHeard] = (0, import_react23.useState)({ kid: null, set: new Set() });
     (0, import_react23.useEffect)(() => {
-      if (heard.size >= 8) stamp("words");
+      if (heard.set.size >= 8) stamp("words");
     }, [heard]);
     const say = (k2) => {
       setHeard((prev) => {
-        const n2 = new Set(prev);
+        let kid = null;
+        try {
+          const p = JSON.parse(localStorage.getItem("greece2027.passport.v1") || "{}");
+          kid = p.active || null;
+        } catch {
+        }
+        const n2 = prev.kid === kid ? new Set(prev.set) : new Set();
         n2.add(k2);
-        return n2;
+        return { kid, set: n2 };
       });
       try {
         if (!("speechSynthesis" in window)) {
