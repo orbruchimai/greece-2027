@@ -3992,6 +3992,10 @@ body {
   font-size: 14px;
   color: #334;
 }
+.bouzouki-poster {
+  transform: rotate(1.4deg);
+  max-width: 300px;
+}
 .confetti {
   position: absolute;
   top: 0;
