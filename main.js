@@ -12325,6 +12325,26 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var SUPA_URL = "https://ghptcjxngaezvckhctko.supabase.co";
   var SUPA_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdocHRjanhuZ2FlenZja2hjdGtvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIxNzcwNDUsImV4cCI6MjEwNzc1MzA0NX0.clayqtyM4htbzkCYo7rFs2DtjM1MOcL1B_nJvqWCDio";
   var SUPA_H = { apikey: SUPA_KEY, Authorization: "Bearer " + SUPA_KEY };
+  var adminSubs = new Set();
+  function getAdminSecret() {
+    try {
+      return sessionStorage.getItem("wall.admin");
+    } catch {
+      return null;
+    }
+  }
+  function notifyAdminSubs() {
+    adminSubs.forEach((f) => f());
+  }
+  function useAdminSecret() {
+    const [a, setA] = (0, import_react23.useState)(getAdminSecret);
+    (0, import_react23.useEffect)(() => {
+      const f = () => setA(getAdminSecret());
+      adminSubs.add(f);
+      return () => adminSubs.delete(f);
+    }, []);
+    return a;
+  }
   var NOTE_COLORS = ["#fff3b8", "#ffd9e3", "#d8ecff", "#dcf5df", "#f3e2ff"];
   function Wall() {
     const [notes, setNotes] = (0, import_react23.useState)(null);
@@ -12430,6 +12450,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         const ok = await r.json();
         if (ok === true) {
           setAdmin(pw);
+          notifyAdminSubs();
           setPw("");
           setAdminOpen(false);
           setAdminMsg("");
@@ -12444,6 +12465,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     };
     const lock = () => {
       setAdmin(null);
+      notifyAdminSubs();
       try {
         sessionStorage.removeItem("wall.admin");
       } catch {
@@ -12630,6 +12652,7 @@ ${text.trim()}`;
   ];
   function Passport() {
     const [pp, setPp, saved] = iu("passport.v1", { kids: [], active: null });
+    const admin = useAdminSecret();
     const [newName, setNewName] = (0, import_react23.useState)("");
     const [justStamped, setJustStamped] = (0, import_react23.useState)("");
     (0, import_react23.useEffect)(() => {
@@ -12675,7 +12698,7 @@ ${text.trim()}`;
             "/",
             STAMPS.length
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "pp-del", onClick: () => remove(k2.id), "aria-label": "\u05DE\u05D7\u05D9\u05E7\u05EA \u05D3\u05E8\u05DB\u05D5\u05DF", children: "\u2715" })
+          /* @__PURE__ */ admin && (0, import_jsx_runtime21.jsx)("button", { className: "pp-del", onClick: () => remove(k2.id), "aria-label": "\u05DE\u05D7\u05D9\u05E7\u05EA \u05D3\u05E8\u05DB\u05D5\u05DF", children: "\u2715" })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "pp-stamps", children: STAMPS.map((st3) => {
           const got = k2.stamps.includes(st3.id);
@@ -12800,15 +12823,14 @@ ${text.trim()}`;
     ] });
   }
   function Games() {
-    const tabs = ["\u05D7\u05D9\u05D3\u05D5\u05DF", "\u05D6\u05D5\u05D2\u05D5\u05EA", "\u05D9\u05D5\u05D5\u05E0\u05D9\u05EA", "\u05D0\u05D2\u05D3\u05D5\u05EA", "\u05DE\u05D9\u05DC\u05D5\u05DF \u{1F50A}"];
+    const tabs = ["\u05D7\u05D9\u05D3\u05D5\u05DF", "\u05D6\u05D5\u05D2\u05D5\u05EA", "\u05D0\u05D2\u05D3\u05D5\u05EA", "\u05D9\u05D5\u05D5\u05E0\u05D9\u05EA"];
     const [t, setT] = (0, import_react23.useState)(0);
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(import_jsx_runtime21.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-tabs", role: "tablist", children: tabs.map((x, k2) => /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { role: "tab", "aria-selected": t === k2, className: t === k2 ? "on" : "", onClick: () => setT(k2), children: x }, k2)) }),
       t === 0 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Quiz, {}),
       t === 1 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Memory, {}),
-      t === 2 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Words, {}),
-      t === 3 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Myths, {}),
-      t === 4 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Dict, {})
+      t === 2 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Myths, {}),
+      t === 3 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Dict, {})
     ] });
   }
   function App() {
@@ -12865,7 +12887,7 @@ ${text.trim()}`;
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Requests, {}),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(_u, { children: "\u05D1\u05DC\u05D9 \u05D4\u05E8\u05E9\u05DE\u05D4 \u05D5\u05D1\u05DC\u05D9 \u05D0\u05E4\u05DC\u05D9\u05E7\u05E6\u05D9\u05D4. \u05D4\u05D1\u05E7\u05E9\u05D4 \u05E0\u05E9\u05DC\u05D7\u05EA \u05D9\u05E9\u05D9\u05E8\u05D5\u05EA \u05DC\u05D4\u05E0\u05D4\u05DC\u05D4 \u05D5\u05DE\u05D2\u05D9\u05E2\u05D4 \u05DC\u05D0\u05D5\u05E8 \u05D3\u05E8\u05DA \u05D4\u05E2\u05D5\u05D6\u05E8 \u05D4\u05D0\u05D9\u05E9\u05D9 \u05E9\u05DC\u05D5." })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "\u05E4\u05D9\u05E0\u05EA \u05D4\u05D9\u05DC\u05D3\u05D9\u05DD: \u05DE\u05E9\u05D7\u05E7\u05D9\u05DD \u05E2\u05DC \u05D9\u05D5\u05D5\u05DF \u{1F3AE}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Games, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "\u05E4\u05D9\u05E0\u05EA \u05D4\u05D9\u05DC\u05D3\u05D9\u05DD (\u05D2\u05DD \u05DE\u05D1\u05D5\u05D2\u05E8\u05D9\u05DD \u05D9\u05DB\u05D5\u05DC\u05D9\u05DD \u{1F929}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Games, {}) }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "\u05D3\u05E8\u05DB\u05D5\u05DF \u05D4\u05D9\u05DC\u05D3\u05D9\u05DD \u05DC\u05D9\u05D5\u05D5\u05DF \u{1F6C2}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Passport, {}) }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "\u05E6\u05D9\u05D3 \u05D4\u05D0\u05D5\u05E6\u05E8\u05D5\u05EA \u05E9\u05DC \u05D0\u05EA\u05D5\u05E0\u05D4 \u{1F48E}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Hunt, {}) }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "\u05DE\u05D4 \u05E6\u05E8\u05D9\u05DA \u05DC\u05D4\u05D1\u05D9\u05D0 \u{1F392}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Packing, {}) }),
