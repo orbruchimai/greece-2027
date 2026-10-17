@@ -12781,7 +12781,16 @@ ${text.trim()}`;
   function Dict() {
     const [noVoice, setNoVoice] = (0, import_react23.useState)(false);
     const [speaking, setSpeaking] = (0, import_react23.useState)(null);
+    const [heard, setHeard] = (0, import_react23.useState)(() => new Set());
+    (0, import_react23.useEffect)(() => {
+      if (heard.size >= 8) stamp("words");
+    }, [heard]);
     const say = (k2) => {
+      setHeard((prev) => {
+        const n2 = new Set(prev);
+        n2.add(k2);
+        return n2;
+      });
       try {
         if (!("speechSynthesis" in window)) {
           setNoVoice(true);
