@@ -12717,17 +12717,17 @@ ${text.trim()}`;
     ] });
   }
   var MISSIONS = [
-    { id: "statue", e: "\u{1F5FF}", t: "תמונה משפחתית עם פסל - כולם מחקים את התנוחה שלו!", p: 10 },
-    { id: "souvlaki", e: "\u{1F959}", t: "להזמין סובלאקי ביוונית בלי לגמגם (או לפחות לנסות ממש חזק)", p: 15 },
-    { id: "olive", e: "\u{1FAD2}", t: "לטעום זית יווני בלי לעשות פרצוף. בכלל לא קל.", p: 5 },
-    { id: "cat", e: "\u{1F408}", t: "לצלם חתול אתונאי. בונוס כבוד: לתת לו שם של אל יווני", p: 5 },
-    { id: "gelato", e: "\u{1F366}", t: "למצוא את הגלידריה הכי טובה בעיר ולקיים הצבעה משפחתית רשמית", p: 10 },
-    { id: "sunset", e: "\u{1F305}", t: "תמונת שקיעה משפחתית - מישהו חייב לקפוץ באוויר", p: 15 },
-    { id: "eye", e: "\u{1F9FF}", t: "למצוא מזכרת עם עין כחולה נגד עין הרע", p: 5 },
-    { id: "tram", e: "\u{1F68B}", t: "לנסוע בתחבורה ציבורית כמו מקומיים אמיתיים", p: 10 },
-    { id: "hello", e: "\u{1F44B}", t: 'לומר "יא סו" למישהו מקומי ולקבל חיוך בחזרה', p: 10 },
-    { id: "pool", e: "\u{1F3CA}", t: "צלילה מסונכרנת של כל המשפחה לבריכה. תיעוד או שלא קרה!", p: 15 }
-  ];
+    { id: "statue", e: "\u{1F5FF}", t: "פסל של אל: תמונה משפחתית עם פסל - כולם מחקים את התנוחה שלו כמו אלי האולימפוס!", p: 10 },
+    { id: "souvlaki", e: "\u{1F959}", t: "הסעודה של דיאוניסוס: להזמין סובלאקי ביוונית בלי לגמגם - אל השמחה דורש ביטחון!", p: 15 },
+    { id: "olive", e: "\u{1FAD2}", t: "מתנת האלה אתנה: לטעום זית יווני בלי לעשות פרצוף. האלה צופה!", p: 5 },
+    { id: "cat", e: "\u{1F408}", t: "לצלם חתול יווני ולתת לו שם של אל או אלה - אפולו? הרה? אתם מחליטים", p: 5 },
+    { id: "gelato", e: "\u{1F989}", t: "הינשוף של אתנה: למצוא ינשוף בחנות מזכרות, על מטבע או על קיר. סמל החוכמה חייב להיות בתמונה", p: 10 },
+    { id: "sunset", e: "\u{1F305}", t: "אפולו, אל השמש: תמונת שקיעה משפחתית - מישהו חייב לקפוץ באוויר", p: 15 },
+    { id: "eye", e: "\u{1F9FF}", t: "מגן מפני מפלצות: למצוא עין כחולה יוונית נגד עין הרע", p: 5 },
+    { id: "tram", e: "\u{1F6B6}", t: "הנעליים המעופפות של הרמס: לנסוע בתחבורה ציבורית כמו שליח האלים - מהר וכמו מקומיים", p: 10 },
+    { id: "hello", e: "\u{26A1}", t: "זאוס, מלך האלים: למצוא פסל, ציור או מזכרת של זאוס ולצלם תמונה מלכותית לידו", p: 10 },
+    { id: "pool", e: "\u{1F531}", t: "פוסידון, אל הים: להיכנס לים עד הברכיים ולומר ״פוסידון, הגענו!״ ביחד. תיעוד או שלא קרה!", p: 15 }
+  ]
   function Hunt() {
     const [done, setDone, saved] = iu("hunt.v1", {});
     const pts = MISSIONS.filter((m) => done[m.id]).reduce((a, m) => a + m.p, 0);
@@ -12747,7 +12747,7 @@ ${text.trim()}`;
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "hunt-bar", children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { style: { width: `${pts / max * 100}%` } }) })
       ] }),
-      pts === max && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-big", children: "וואו! כל האוצרות נמצאו! אתונה רשמית שלנו \u{1F3C6}" }),
+      pts === max && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-big", children: "וואו! כל האוצרות נמצאו! יוון רשמית שלנו \u{1F3C6}" }),
       MISSIONS.map((m) => /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("button", { className: "hunt-m" + (done[m.id] ? " ok" : ""), onClick: () => toggle(m.id), "aria-pressed": !!done[m.id], children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "hunt-e", children: m.e }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "hunt-t", children: m.t }),
@@ -12912,8 +12912,8 @@ ${text.trim()}`;
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(_u, { children: "בלי הרשמה ובלי אפליקציה. הבקשה נשלחת ישירות להנהלה ומגיעה לאור דרך העוזר האישי שלו." })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "פינת הילדים (גם מבוגרים יכולים \u{1F929})", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Games, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "דרכון הילדים ליוון \u{1F6C2}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Passport, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "ציד האוצרות של אתונה \u{1F48E}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Hunt, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "דרכון הילדים ליוון (דרכון וירטואלי ומגניב) \u{1F6C2}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Passport, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "ציד האוצרות של יוון \u{1F48E}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Hunt, {}) }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "מה צריך להביא \u{1F392}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Packing, {}) }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(es, { children: "הלו״ז המלא יעודכן כשיהיו פרטים מאושרים. נתראה בשמיים! \u{1F1EC}\u{1F1F7}" })
       ] })
