@@ -7734,7 +7734,7 @@
         d.current === p && p.sequence === m && f2({ status: P.status ?? "unknown" });
       });
     }, [r, s, f2]);
-    return [l2, i, { ready: s, status: u, message: u === "loading" ? "Loading saved state\u2026" : u === "saving" ? "Saving\u2026" : u === "saved" ? "Saved on this device" : "Not saved. Changes last only while this File is open." }];
+    return [l2, i, { ready: s, status: u, message: u === "loading" ? "Loading saved state…" : u === "saving" ? "Saving…" : u === "saved" ? "Saved on this device" : "Not saved. Changes last only while this File is open." }];
   }
   var Fa = (...e2) => e2.filter((a, t, o) => !!a && a.trim() !== "" && o.indexOf(a) === t).join(" ").trim();
   var fr = (e2) => e2.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
@@ -8806,7 +8806,7 @@
   function Rd() {
     return (0, import_jsx_runtime13.jsx)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": "true", children: (0, import_jsx_runtime13.jsx)("path", { d: "M20.5 12C20.5 9.76676 19.686 8.06004 18.2871 6.89355C16.8661 5.70886 14.7409 5 12 5C9.25912 5 7.13392 5.70886 5.71288 6.89355C4.31396 8.06004 3.49999 9.76677 3.49999 12C3.49999 12.4778 3.67754 13.2204 3.91698 13.9678C4.14619 14.6832 4.39417 15.2886 4.45995 15.4463C4.47153 15.474 4.45918 15.4447 4.47753 15.4883L4.51269 15.5781L4.55273 15.6973C4.71413 16.2258 4.88032 17.3955 4.10253 18.9609C4.45806 18.9447 4.80995 18.8667 5.14062 18.752C5.48117 18.6338 5.77064 18.4882 5.9746 18.3721C6.07544 18.3146 6.15337 18.2661 6.20312 18.2334C6.22792 18.2171 6.2459 18.2042 6.25585 18.1973C6.25889 18.1952 6.26114 18.1935 6.26269 18.1924C6.57078 17.9671 6.98047 17.9376 7.31835 18.1152C8.64944 18.8149 10.295 19 12 19C14.7409 19 16.8661 18.2911 18.2871 17.1064C19.686 15.94 20.5 14.2332 20.5 12ZM22.5 12C22.5 14.7665 21.4668 17.06 19.5674 18.6436C17.6898 20.2087 15.0646 21 12 21C10.3808 21 8.55858 20.8483 6.91699 20.1357C6.63773 20.2919 6.25326 20.4829 5.79589 20.6416C4.84476 20.9715 3.45924 21.2047 2.07226 20.5479C1.80018 20.419 1.59992 20.1742 1.52831 19.8818C1.45679 19.5894 1.52128 19.28 1.70312 19.04C2.39144 18.1322 2.60883 17.4279 2.66894 16.9775C2.72939 16.5244 2.63731 16.2736 2.63476 16.2666L2.63378 16.2646C2.63187 16.2601 2.63059 16.2546 2.62695 16.2461C2.62373 16.2386 2.61901 16.2282 2.61425 16.2168L2.61327 16.2158C2.53665 16.0321 2.2661 15.369 2.01269 14.5781C1.76944 13.8189 1.49999 12.8165 1.49999 12C1.49999 9.23347 2.5332 6.93995 4.43261 5.35645C6.31017 3.79128 8.93544 3 12 3C15.0646 3 17.6898 3.79129 19.5674 5.35645C21.4668 6.93996 22.5 9.23348 22.5 12Z" }) });
   }
-  var Bd = { idle: { icon: (0, import_jsx_runtime13.jsx)(Rd, {}), label: jo.label, shortLabel: "Buy this", variant: "active" }, sending: { icon: (0, import_jsx_runtime13.jsx)(oe2, { className: "file-spin", size: 16, strokeWidth: 2.25, "aria-hidden": "true" }), label: "Sending\u2026", variant: "disabled" }, sent: { icon: (0, import_jsx_runtime13.jsx)(Qe2, { size: 16, strokeWidth: 2.25, "aria-hidden": "true" }), label: "Sent", shortLabel: "Sent", variant: "disabled" } };
+  var Bd = { idle: { icon: (0, import_jsx_runtime13.jsx)(Rd, {}), label: jo.label, shortLabel: "Buy this", variant: "active" }, sending: { icon: (0, import_jsx_runtime13.jsx)(oe2, { className: "file-spin", size: 16, strokeWidth: 2.25, "aria-hidden": "true" }), label: "Sending…", variant: "disabled" }, sent: { icon: (0, import_jsx_runtime13.jsx)(Qe2, { size: 16, strokeWidth: 2.25, "aria-hidden": "true" }), label: "Sent", shortLabel: "Sent", variant: "disabled" } };
 
   // ../../opt/files/node_modules/react-router/dist/development/chunk-BV7QT456.mjs
   var React = __toESM(require_react(), 1);
@@ -11725,13 +11725,13 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     };
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(import_jsx_runtime21.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("audio", { ref, src: sirtaki_celebration_default, loop: true, preload: "none" }),
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("button", { type: "button", className: "mus2" + (playing ? " on" : ""), onClick: toggle, "aria-pressed": playing, "aria-label": playing ? "\u05D4\u05E9\u05EA\u05E7\u05EA \u05D4\u05E1\u05D9\u05E8\u05D8\u05E7\u05D9" : "\u05E0\u05D9\u05D2\u05D5\u05DF \u05E1\u05D9\u05E8\u05D8\u05E7\u05D9 \u05D9\u05D5\u05D5\u05E0\u05D9", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("button", { type: "button", className: "mus2" + (playing ? " on" : ""), onClick: toggle, "aria-pressed": playing, "aria-label": playing ? "השתקת הסירטקי" : "ניגון סירטקי יווני", children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("span", { className: "mus-bars", "aria-hidden": true, children: [
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("i", {}),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("i", {}),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("i", {})
         ] }),
-        playing ? "\u05E1\u05D9\u05E8\u05D8\u05E7\u05D9 \u05DE\u05EA\u05E0\u05D2\u05DF - \u05DC\u05D4\u05E9\u05EA\u05D9\u05E7" : "\u05D9\u05D0\u05DC\u05DC\u05D4 \u05EA\u05DC\u05D7\u05E6\u05D5 \u05E2\u05DC\u05D9\u05D9 \u05DC\u05D0\u05D5\u05D5\u05D9\u05E8\u05D4 \u{1F973}"
+        playing ? "סירטקי מתנגן - להשתיק" : "יאללה תלחצו עליי לאווירה \u{1F973}"
       ] })
     ] });
   }
@@ -11740,12 +11740,12 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     const diff = Math.max(0, TARGET - now);
     const s = Math.floor(diff / 1e3);
     const units = [
-      { n: Math.floor(s / 86400), l: "\u05D9\u05DE\u05D9\u05DD" },
-      { n: Math.floor(s % 86400 / 3600), l: "\u05E9\u05E2\u05D5\u05EA" },
-      { n: Math.floor(s % 3600 / 60), l: "\u05D3\u05E7\u05D5\u05EA" },
-      { n: s % 60, l: "\u05E9\u05E0\u05D9\u05D5\u05EA" }
+      { n: Math.floor(s / 86400), l: "ימים" },
+      { n: Math.floor(s % 86400 / 3600), l: "שעות" },
+      { n: Math.floor(s % 3600 / 60), l: "דקות" },
+      { n: s % 60, l: "שניות" }
     ];
-    return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "cd", style: { backgroundImage: `linear-gradient(180deg, rgba(20,24,40,.35), rgba(20,24,40,.8)), url(${acropolis_default})` }, role: "timer", "aria-label": "\u05E1\u05E4\u05D9\u05E8\u05D4 \u05DC\u05D0\u05D7\u05D5\u05E8 \u05DC\u05D8\u05D9\u05E1\u05D4", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "cd", style: { backgroundImage: `linear-gradient(180deg, rgba(20,24,40,.35), rgba(20,24,40,.8)), url(${acropolis_default})` }, role: "timer", "aria-label": "ספירה לאחור לטיסה", children: [
       /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "cd-grid", children: units.map((u) => /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "cd-box", children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "cd-num", children: String(u.n).padStart(2, "0") }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "cd-lbl", children: u.l })
@@ -12029,7 +12029,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         const tPlane = reduced ? 1 : eased;
         drawRoute(0, 1, phi, th, R3, "rgba(255,255,255,0.42)", 1.6, [4, 6], false);
         if (tPlane > 4e-3) drawRoute(0, tPlane, phi, th, R3, "#fbbf24", 2.6, [], true);
-        const cities = [[GLOBE_TLV, "\u05EA\u05DC \u05D0\u05D1\u05D9\u05D1", 0, 18], [GLOBE_ATH, "\u05D0\u05EA\u05D5\u05E0\u05D4", 0, -16]];
+        const cities = [[GLOBE_TLV, "תל אביב", 0, 18], [GLOBE_ATH, "אתונה", 0, -16]];
         ctx.textAlign = "center";
         ctx.font = "600 13px Rubik, Arial, sans-serif";
         const labelA = Math.max(0, Math.min(1, (prog - 0.22) / 0.3));
@@ -12086,47 +12086,47 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         ro.disconnect();
       };
     }, []);
-    return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { ref: wrapRef, className: "globe", role: "img", "aria-label": "\u05D2\u05DC\u05D5\u05D1\u05D5\u05E1 \u05E2\u05DD \u05DE\u05E1\u05DC\u05D5\u05DC \u05D8\u05D9\u05E1\u05D4 \u05DE\u05EA\u05DC \u05D0\u05D1\u05D9\u05D1 \u05DC\u05D0\u05EA\u05D5\u05E0\u05D4", children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("canvas", { ref: canvasRef }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { ref: wrapRef, className: "globe", role: "img", "aria-label": "גלובוס עם מסלול טיסה מתל אביב לאתונה", children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("canvas", { ref: canvasRef }) });
   }
   var days = [
-    { n: 1, name: "\u{1F9F3} \u05D9\u05D5\u05DD \u05D2\u05F3 3.8 - \u05E0\u05D5\u05D7\u05EA\u05D9\u05DD \u05D1\u05D0\u05EA\u05D5\u05E0\u05D4", detail: "\u05E0\u05D7\u05D9\u05EA\u05D4 \u05D0\u05D7\u05D4\u05F4\u05E6, \u05D0\u05D9\u05E1\u05D5\u05E3 \u05DE\u05D6\u05D5\u05D5\u05D3\u05D5\u05EA, \u05D4\u05D2\u05E2\u05D4 \u05DC\u05DC\u05D9\u05E0\u05D4 \u05D5\u05D4\u05EA\u05D0\u05E8\u05D2\u05E0\u05D5\u05EA. \u05E2\u05E8\u05D1 \u05E8\u05D2\u05D5\u05E2: \u05D8\u05D9\u05D5\u05DC \u05D1\u05E4\u05DC\u05D0\u05E7\u05D4 \u05D5\u05DE\u05D5\u05E0\u05E1\u05D8\u05D9\u05E8\u05D0\u05E7\u05D9 \u05D5\u05D0\u05E8\u05D5\u05D7\u05EA \u05E2\u05E8\u05D1 \u05D9\u05D5\u05D5\u05E0\u05D9\u05EA \u05E8\u05D0\u05E9\u05D5\u05E0\u05D4." },
-    { n: 2, name: "\u{1F3DB}\uFE0F \u05D9\u05D5\u05DD \u05D3\u05F3 4.8 - \u05D4\u05D0\u05E7\u05E8\u05D5\u05E4\u05D5\u05DC\u05D9\u05E1", detail: "\u05D9\u05D5\u05E6\u05D0\u05D9\u05DD \u05DE\u05D5\u05E7\u05D3\u05DD \u05D1\u05D1\u05D5\u05E7\u05E8, \u05DC\u05E4\u05E0\u05D9 \u05D4\u05D7\u05D5\u05DD. \u05D0\u05D7\u05E8 \u05DB\u05DA \u05DE\u05D5\u05D6\u05D9\u05D0\u05D5\u05DF \u05D4\u05D0\u05E7\u05E8\u05D5\u05E4\u05D5\u05DC\u05D9\u05E1 (\u05DE\u05E7\u05D5\u05E8\u05D4 \u05D5\u05DE\u05E7\u05D5\u05E8\u05E8), \u05D4\u05E4\u05E1\u05E7\u05EA \u05E6\u05D4\u05E8\u05D9\u05D9\u05DD \u05D1\u05DE\u05DC\u05D5\u05DF. \u05E2\u05E8\u05D1: \u05E9\u05DB\u05D5\u05E0\u05EA \u05E4\u05E1\u05D9\u05E8\u05D9 \u05D0\u05D5 \u05E9\u05D5\u05E7 \u05DE\u05D5\u05E0\u05E1\u05D8\u05D9\u05E8\u05D0\u05E7\u05D9." },
-    { n: 3, name: "\u{1F3D6}\uFE0F \u05D9\u05D5\u05DD \u05D4\u05F3 5.8 - \u05D9\u05D5\u05DD \u05D9\u05DD", detail: "\u05D9\u05D5\u05DD \u05D7\u05D5\u05E3 \u05D5\u05E9\u05D7\u05D9\u05D9\u05D4 \u05D1\u05E8\u05D9\u05D1\u05D9\u05D9\u05E8\u05D4 \u05E9\u05DC \u05D0\u05EA\u05D5\u05E0\u05D4 (\u05D2\u05DC\u05D9\u05E4\u05D3\u05D4 / \u05D5\u05D5\u05DC\u05D9\u05D9\u05E1\u05DE\u05E0\u05D9). \u05D4\u05E8\u05D1\u05D4 \u05DE\u05D9\u05DD, \u05E9\u05DE\u05E9\u05D9\u05D5\u05EA \u05D5\u05D2\u05DC\u05D9\u05D3\u05D4." },
-    { n: 4, name: "\u{1F305} \u05D9\u05D5\u05DD \u05D5\u05F3 6.8 - \u05E1\u05D5\u05E0\u05D9\u05D5\u05DF \u05D5\u05E9\u05E7\u05D9\u05E2\u05D4", detail: "\u05E0\u05E1\u05D9\u05E2\u05D4 \u05DC\u05DB\u05E3 \u05E1\u05D5\u05E0\u05D9\u05D5\u05DF, \u05DE\u05E7\u05D3\u05E9 \u05E4\u05D5\u05E1\u05D9\u05D3\u05D5\u05DF \u05D5\u05E9\u05E7\u05D9\u05E2\u05D4 \u05E2\u05DC \u05D4\u05D9\u05DD. \u05E8\u05E6\u05D5\u05D9 \u05DC\u05E9\u05E8\u05D9\u05D9\u05DF \u05E9\u05E2\u05EA \u05E9\u05E7\u05D9\u05E2\u05D4 \u05D1\u05D1\u05D5\u05E7\u05E8 \u05D5\u05DC\u05D4\u05D2\u05D9\u05E2 \u05E9\u05E2\u05D4 \u05E7\u05D5\u05D3\u05DD." },
-    { n: 5, name: "\u{1F388} \u05E9\u05D1\u05EA 7.8 - \u05D9\u05D5\u05DD \u05D7\u05D5\u05E4\u05E9\u05D9", detail: "\u05D0\u05D2\u05D5\u05E8\u05D4 \u05D4\u05E2\u05EA\u05D9\u05E7\u05D4, \u05D2\u05DF \u05DC\u05D0\u05D5\u05DE\u05D9, \u05E4\u05D0\u05E8\u05E7 \u05E9\u05E2\u05E9\u05D5\u05E2\u05D9\u05DD \u05D0\u05D5 \u05E2\u05D5\u05D3 \u05D9\u05D5\u05DD \u05D9\u05DD, \u05DC\u05E4\u05D9 \u05DE\u05E6\u05D1 \u05D4\u05E8\u05D5\u05D7 \u05E9\u05DC \u05D4\u05D9\u05DC\u05D3\u05D9\u05DD. \u05D0\u05E8\u05D5\u05D7\u05EA \u05E4\u05E8\u05D9\u05D3\u05D4 \u05DE\u05E9\u05E4\u05D7\u05EA\u05D9\u05EA." },
-    { n: 6, name: "\u{1F6EB} \u05D9\u05D5\u05DD \u05D0\u05F3 8.8 - \u05D7\u05D5\u05D6\u05E8\u05D9\u05DD \u05D4\u05D1\u05D9\u05EA\u05D4", detail: "\u05D0\u05E8\u05D9\u05D6\u05D4, \u05E6\u05F3\u05E7-\u05D0\u05D0\u05D5\u05D8 \u05D5\u05E0\u05E1\u05D9\u05E2\u05D4 \u05DC\u05E9\u05D3\u05D4 \u05D4\u05EA\u05E2\u05D5\u05E4\u05D4. \u05E9\u05E2\u05D5\u05EA \u05D4\u05D8\u05D9\u05E1\u05D4 \u05D7\u05D6\u05E8\u05D4 \u05DC\u05DB\u05DC \u05E7\u05D1\u05D5\u05E6\u05D4 \u05D9\u05E2\u05D5\u05D3\u05DB\u05E0\u05D5 \u05DB\u05D0\u05DF \u05DC\u05D0\u05D7\u05E8 \u05D0\u05D9\u05DE\u05D5\u05EA." }
+    { n: 1, name: "\u{1F9F3} יום ג׳ 3.8 - נוחתים באתונה", detail: "נחיתה אחה״צ, איסוף מזוודות, הגעה ללינה והתארגנות. ערב רגוע: טיול בפלאקה ומונסטיראקי וארוחת ערב יוונית ראשונה." },
+    { n: 2, name: "\u{1F3DB}\uFE0F יום ד׳ 4.8 - האקרופוליס", detail: "יוצאים מוקדם בבוקר, לפני החום. אחר כך מוזיאון האקרופוליס (מקורה ומקורר), הפסקת צהריים במלון. ערב: שכונת פסירי או שוק מונסטיראקי." },
+    { n: 3, name: "\u{1F3D6}\uFE0F יום ה׳ 5.8 - יום ים", detail: "יום חוף ושחייה בריביירה של אתונה (גליפדה / וולייסמני). הרבה מים, שמשיות וגלידה." },
+    { n: 4, name: "\u{1F305} יום ו׳ 6.8 - סוניון ושקיעה", detail: "נסיעה לכף סוניון, מקדש פוסידון ושקיעה על הים. רצוי לשריין שעת שקיעה בבוקר ולהגיע שעה קודם." },
+    { n: 5, name: "\u{1F388} שבת 7.8 - יום חופשי", detail: "אגורה העתיקה, גן לאומי, פארק שעשועים או עוד יום ים, לפי מצב הרוח של הילדים. ארוחת פרידה משפחתית." },
+    { n: 6, name: "\u{1F6EB} יום א׳ 8.8 - חוזרים הביתה", detail: "אריזה, צ׳ק-אאוט ונסיעה לשדה התעופה. חוזרים הביתה: Wizz W4 8402 ב-09:55 ו-Aegean A3 924 ב-10:50." }
   ];
   var packing = [
-    { title: "\u{1F4C4} \u05DE\u05E1\u05DE\u05DB\u05D9\u05DD \u05D5\u05DB\u05E1\u05E3", items: [
-      { id: "d1", text: "\u05D3\u05E8\u05DB\u05D5\u05DF \u05D1\u05EA\u05D5\u05E7\u05E3 \u05DC\u05DB\u05D5\u05DC\u05DD (\u05DC\u05E4\u05D7\u05D5\u05EA 6 \u05D7\u05D5\u05D3\u05E9\u05D9\u05DD \u05DE\u05D9\u05D5\u05DD \u05D4\u05D8\u05D9\u05E1\u05D4)" },
-      { id: "d2", text: "\u05DB\u05E8\u05D8\u05D9\u05E1\u05D9 \u05D8\u05D9\u05E1\u05D4 \u05D5\u05DB\u05E8\u05D8\u05D9\u05E1\u05D9 \u05E2\u05DC\u05D9\u05D9\u05D4 \u05DC\u05DE\u05D8\u05D5\u05E1 \u05D1\u05E0\u05D9\u05D9\u05D3" },
-      { id: "d3", text: "\u05D1\u05D9\u05D8\u05D5\u05D7 \u05E0\u05E1\u05D9\u05E2\u05D5\u05EA \u05DC\u05DB\u05D5\u05DC\u05DD" },
-      { id: "d4", text: "\u05DB\u05E8\u05D8\u05D9\u05E1 \u05D0\u05E9\u05E8\u05D0\u05D9 \u05D5\u05DE\u05E2\u05D8 \u05DE\u05D6\u05D5\u05DE\u05DF \u05D1\u05D0\u05D9\u05E8\u05D5" },
-      { id: "d5", text: "\u05D8\u05DC\u05E4\u05D5\u05DF, \u05DE\u05D8\u05E2\u05DF, \u05DE\u05D8\u05E2\u05DF \u05E0\u05D9\u05D9\u05D3 \u05D5\u05DE\u05EA\u05D0\u05DD \u05E9\u05E7\u05E2 (\u05E9\u05E7\u05E2 \u05D0\u05D9\u05E8\u05D5\u05E4\u05D0\u05D9)" }
+    { title: "\u{1F4C4} מסמכים וכסף", items: [
+      { id: "d1", text: "דרכון בתוקף לכולם (לפחות 6 חודשים מיום הטיסה)" },
+      { id: "d2", text: "כרטיסי טיסה וכרטיסי עלייה למטוס בנייד" },
+      { id: "d3", text: "ביטוח נסיעות לכולם" },
+      { id: "d4", text: "כרטיס אשראי ומעט מזומן באירו" },
+      { id: "d5", text: "טלפון, מטען, מטען נייד ומתאם שקע (שקע אירופאי)" }
     ] },
-    { title: "\u{1F9F3} \u05DE\u05D1\u05D5\u05D2\u05E8\u05D9\u05DD", items: [
-      { id: "a1", text: "\u05D1\u05D2\u05D3\u05D9\u05DD \u05E7\u05DC\u05D9\u05DD \u05D5\u05E0\u05D5\u05E9\u05DE\u05D9\u05DD, \u05DB\u05D5\u05D1\u05E2 \u05D5\u05DE\u05E9\u05E7\u05E4\u05D9 \u05E9\u05DE\u05E9" },
-      { id: "a2", text: "\u05E7\u05E8\u05DD \u05D4\u05D2\u05E0\u05D4 (SPF 50) \u05D5\u05E7\u05E8\u05DD \u05DC\u05D0\u05D7\u05E8 \u05E9\u05DE\u05E9" },
-      { id: "a3", text: "\u05E0\u05E2\u05DC\u05D9\u05D9\u05DD \u05E0\u05D5\u05D7\u05D5\u05EA \u05DC\u05D4\u05DC\u05D9\u05DB\u05D4 \u05E2\u05DC \u05D0\u05D1\u05E0\u05D9\u05DD (\u05D0\u05E7\u05E8\u05D5\u05E4\u05D5\u05DC\u05D9\u05E1) \u05D5\u05E0\u05E2\u05DC\u05D9 \u05D9\u05DD" },
-      { id: "a4", text: "\u05D1\u05D2\u05D3\u05D9 \u05D9\u05DD \u05D5\u05DE\u05D2\u05D1\u05EA \u05D7\u05D5\u05E3 \u05E7\u05DC\u05D4" },
-      { id: "a5", text: "\u05D1\u05E7\u05D1\u05D5\u05E7 \u05DE\u05D9\u05DD \u05E8\u05D1-\u05E4\u05E2\u05DE\u05D9" },
-      { id: "a6", text: "\u05EA\u05E8\u05D5\u05E4\u05D5\u05EA \u05E7\u05D1\u05D5\u05E2\u05D5\u05EA \u05D5\u05EA\u05E8\u05D5\u05E4\u05D5\u05EA \u05D1\u05E1\u05D9\u05E1 (\u05DB\u05D0\u05D1\u05D9\u05DD, \u05D1\u05D8\u05DF, \u05D0\u05E0\u05D8\u05D9\u05D4\u05D9\u05E1\u05D8\u05DE\u05D9\u05DF)" },
-      { id: "a7", text: "\u05E1\u05D5\u05D5\u05D3\u05E8 \u05D3\u05E7 \u05D0\u05D5 \u05E6\u05E2\u05D9\u05E3 \u05DC\u05E9\u05D3\u05D4 \u05D4\u05EA\u05E2\u05D5\u05E4\u05D4 \u05D5\u05DC\u05DE\u05D6\u05D2\u05DF" }
+    { title: "\u{1F9F3} מבוגרים", items: [
+      { id: "a1", text: "בגדים קלים ונושמים, כובע ומשקפי שמש" },
+      { id: "a2", text: "קרם הגנה (SPF 50) וקרם לאחר שמש" },
+      { id: "a3", text: "נעליים נוחות להליכה על אבנים (אקרופוליס) ונעלי ים" },
+      { id: "a4", text: "בגדי ים ומגבת חוף קלה" },
+      { id: "a5", text: "בקבוק מים רב-פעמי" },
+      { id: "a6", text: "תרופות קבועות ותרופות בסיס (כאבים, בטן, אנטיהיסטמין)" },
+      { id: "a7", text: "סוודר דק או צעיף לשדה התעופה ולמזגן" }
     ] },
-    { title: "\u{1F9D2} \u05D9\u05DC\u05D3\u05D9\u05DD", items: [
-      { id: "c1", text: "\u05DB\u05D5\u05D1\u05E2\u05D9 \u05E9\u05DE\u05E9, \u05D1\u05D2\u05D3\u05D9 \u05D9\u05DD \u05D5\u05D7\u05D5\u05DC\u05E6\u05D5\u05EA \u05D4\u05D2\u05E0\u05D4 \u05DE\u05D4\u05E9\u05DE\u05E9" },
-      { id: "c2", text: "\u05E0\u05E2\u05DC\u05D9 \u05D9\u05DD \u05D5\u05E0\u05E2\u05DC\u05D9\u05D9\u05DD \u05E1\u05D2\u05D5\u05E8\u05D5\u05EA \u05DC\u05D8\u05D9\u05D5\u05DC\u05D9\u05DD" },
-      { id: "c3", text: "\u05E2\u05E8\u05DB\u05EA \u05E4\u05E2\u05D9\u05DC\u05D5\u05EA \u05DC\u05D8\u05D9\u05E1\u05D4: \u05DE\u05E9\u05D7\u05E7\u05D9\u05DD, \u05DE\u05D3\u05D1\u05E7\u05D5\u05EA, \u05D0\u05D5\u05D6\u05E0\u05D9\u05D5\u05EA, \u05D7\u05D8\u05D9\u05E4\u05D9\u05DD" },
-      { id: "c4", text: "\u05D1\u05D2\u05D3\u05D9 \u05D4\u05D7\u05DC\u05E4\u05D4 \u05D1\u05EA\u05D9\u05E7 \u05D4\u05D9\u05D3, \u05D5\u05E4\u05D9\u05D2\u05F3\u05DE\u05D4 \u05D0\u05D7\u05EA \u05DC\u05DE\u05E7\u05E8\u05D4 \u05E9\u05DC \u05DC\u05D9\u05DC\u05D4 \u05D0\u05E8\u05D5\u05DA" },
-      { id: "c5", text: "\u05E6\u05E2\u05E6\u05D5\u05E2 \u05D0\u05D5 \u05E9\u05DE\u05D9\u05DB\u05D4 \u05D0\u05D4\u05D5\u05D1\u05D9\u05DD" }
+    { title: "\u{1F9D2} ילדים", items: [
+      { id: "c1", text: "כובעי שמש, בגדי ים וחולצות הגנה מהשמש" },
+      { id: "c2", text: "נעלי ים ונעליים סגורות לטיולים" },
+      { id: "c3", text: "ערכת פעילות לטיסה: משחקים, מדבקות, אוזניות, חטיפים" },
+      { id: "c4", text: "בגדי החלפה בתיק היד, ופיג׳מה אחת למקרה של לילה ארוך" },
+      { id: "c5", text: "צעצוע או שמיכה אהובים" }
     ] },
-    { title: "\u{1F37C} \u05EA\u05D9\u05E0\u05D5\u05E7", items: [
-      { id: "b1", text: "\u05D7\u05D9\u05EA\u05D5\u05DC\u05D9\u05DD, \u05DE\u05D2\u05D1\u05D5\u05E0\u05D9\u05DD \u05D5\u05E7\u05E8\u05DD \u05D4\u05D7\u05EA\u05DC\u05D4" },
-      { id: "b2", text: "\u05DE\u05D8\u05E8\u05E0\u05D4 \u05D0\u05D5 \u05D0\u05D5\u05DB\u05DC, \u05D1\u05E7\u05D1\u05D5\u05E7\u05D9\u05DD \u05D5\u05DE\u05E2\u05E7\u05E8" },
-      { id: "b3", text: "\u05DE\u05E0\u05E9\u05D0 \u05D0\u05D5 \u05E2\u05D2\u05DC\u05D4 \u05E7\u05DC\u05D4 \u05DE\u05EA\u05E7\u05E4\u05DC\u05EA" },
-      { id: "b4", text: "\u05DB\u05D5\u05D1\u05E2 \u05E8\u05D7\u05D1 \u05E9\u05D5\u05DC\u05D9\u05D9\u05DD \u05D5\u05E9\u05DE\u05E9\u05D9\u05D4 \u05DC\u05E2\u05D2\u05DC\u05D4" },
-      { id: "b5", text: "\u05DE\u05D5\u05E6\u05E6\u05D9\u05DD, \u05D1\u05D2\u05D3\u05D9 \u05D4\u05D7\u05DC\u05E4\u05D4 \u05D5\u05D7\u05D9\u05EA\u05D5\u05DC\u05D9 \u05D1\u05D3" },
-      { id: "b6", text: "\u05DC\u05D4\u05EA\u05E2\u05D3\u05DB\u05DF \u05D0\u05E6\u05DC \u05D7\u05D1\u05E8\u05D5\u05EA \u05D4\u05EA\u05E2\u05D5\u05E4\u05D4 \u05E2\u05DC \u05DB\u05DC\u05DC\u05D9 \u05E2\u05D2\u05DC\u05D4 \u05D5\u05DE\u05D5\u05E9\u05D1 \u05DC\u05EA\u05D9\u05E0\u05D5\u05E7" }
+    { title: "\u{1F37C} תינוק", items: [
+      { id: "b1", text: "חיתולים, מגבונים וקרם החתלה" },
+      { id: "b2", text: "מטרנה או אוכל, בקבוקים ומעקר" },
+      { id: "b3", text: "מנשא או עגלה קלה מתקפלת" },
+      { id: "b4", text: "כובע רחב שוליים ושמשיה לעגלה" },
+      { id: "b5", text: "מוצצים, בגדי החלפה וחיתולי בד" },
+      { id: "b6", text: "להתעדכן אצל חברות התעופה על כללי עגלה ומושב לתינוק" }
     ] }
   ];
   function Packing() {
@@ -12138,11 +12138,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     const done = Object.values(checked).filter(Boolean).length;
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(import_jsx_runtime21.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Xu, { children: [
-        "\u05E1\u05D9\u05DE\u05E0\u05EA\u05DD? \u05D6\u05D4 \u05E0\u05E9\u05DE\u05E8 \u05D1\u05DE\u05DB\u05E9\u05D9\u05E8 \u05D4\u05D6\u05D4. ",
+        "סימנתם? זה נשמר במכשיר הזה. ",
         done,
-        " \u05DE\u05EA\u05D5\u05DA ",
+        " מתוך ",
         total,
-        " \u05D0\u05E8\u05D5\u05D6\u05D9\u05DD."
+        " ארוזים."
       ] }),
       packing.map((g) => /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "pk", children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "pk-title", children: g.title }),
@@ -12155,12 +12155,12 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     ] });
   }
   var quiz = [
-    { q: "\u05DE\u05D4\u05D9 \u05D1\u05D9\u05E8\u05EA \u05D9\u05D5\u05D5\u05DF?", a: ["\u05D0\u05EA\u05D5\u05E0\u05D4", "\u05E8\u05D5\u05DE\u05D0", "\u05D0\u05D9\u05E1\u05D8\u05E0\u05D1\u05D5\u05DC"], c: 0, f: "\u05E0\u05DB\u05D5\u05DF! \u05D0\u05EA\u05D5\u05E0\u05D4 \u05D4\u05D9\u05D0 \u05D0\u05D7\u05EA \u05D4\u05E2\u05E8\u05D9\u05DD \u05D4\u05E2\u05EA\u05D9\u05E7\u05D5\u05EA \u05D1\u05E2\u05D5\u05DC\u05DD." },
-    { q: "\u05E2\u05DC \u05E9\u05DD \u05D0\u05D9\u05D6\u05D5 \u05D0\u05DC\u05D4 \u05E0\u05E7\u05E8\u05D0\u05EA \u05D0\u05EA\u05D5\u05E0\u05D4?", a: ["\u05D0\u05E4\u05E8\u05D5\u05D3\u05D9\u05D8\u05D4", "\u05D0\u05EA\u05E0\u05D4, \u05D0\u05DC\u05EA \u05D4\u05D7\u05D5\u05DB\u05DE\u05D4", "\u05D4\u05E8\u05D4"], c: 1, f: "\u05DC\u05E4\u05D9 \u05D4\u05DE\u05D9\u05EA\u05D5\u05E1, \u05D0\u05EA\u05E0\u05D4 \u05E0\u05EA\u05E0\u05D4 \u05DC\u05E2\u05D9\u05E8 \u05E2\u05E5 \u05D6\u05D9\u05EA \u05D5\u05D4\u05EA\u05D5\u05E9\u05D1\u05D9\u05DD \u05D1\u05D7\u05E8\u05D5 \u05D1\u05D4." },
-    { q: "\u05D0\u05D9\u05D6\u05D4 \u05DE\u05E7\u05D3\u05E9 \u05DE\u05E4\u05D5\u05E8\u05E1\u05DD \u05E2\u05D5\u05DE\u05D3 \u05E2\u05DC \u05D4\u05D0\u05E7\u05E8\u05D5\u05E4\u05D5\u05DC\u05D9\u05E1?", a: ["\u05D4\u05E4\u05E8\u05EA\u05E0\u05D5\u05DF", "\u05D4\u05E7\u05D5\u05DC\u05D5\u05E1\u05D9\u05D0\u05D5\u05DD", "\u05D4\u05E4\u05D9\u05E8\u05DE\u05D9\u05D3\u05D4"], c: 0, f: "\u05D4\u05E4\u05E8\u05EA\u05E0\u05D5\u05DF \u05E0\u05D1\u05E0\u05D4 \u05DC\u05E4\u05E0\u05D9 \u05DB-2,500 \u05E9\u05E0\u05D4 \u05DC\u05DB\u05D1\u05D5\u05D3 \u05D0\u05EA\u05E0\u05D4." },
-    { q: "\u05D0\u05D9\u05D6\u05D4 \u05D0\u05DC \u05E9\u05D5\u05DC\u05D8 \u05D1\u05D9\u05DD?", a: ["\u05D6\u05D0\u05D5\u05E1", "\u05D4\u05D3\u05E1", "\u05E4\u05D5\u05E1\u05D9\u05D3\u05D5\u05DF"], c: 2, f: "\u05E4\u05D5\u05E1\u05D9\u05D3\u05D5\u05DF, \u05D5\u05D1\u05D9\u05D3\u05D5 \u05E7\u05DC\u05E9\u05D5\u05DF. \u05DE\u05E7\u05D3\u05E9 \u05E9\u05DC\u05D5 \u05E2\u05D5\u05DE\u05D3 \u05D1\u05E1\u05D5\u05E0\u05D9\u05D5\u05DF." },
-    { q: "\u05DB\u05DE\u05D4 \u05D0\u05D5\u05EA\u05D9\u05D5\u05EA \u05D9\u05E9 \u05D1\u05D0\u05DC\u05E4\u05D1\u05D9\u05EA \u05D4\u05D9\u05D5\u05D5\u05E0\u05D9?", a: ["24", "22", "30"], c: 0, f: "\u05DE\u05D0\u05DC\u05E4\u05D0 \u05D5\u05E2\u05D3 \u05D0\u05D5\u05DE\u05D2\u05D4, 24 \u05D0\u05D5\u05EA\u05D9\u05D5\u05EA." },
-    { q: "\u05D0\u05D9\u05E4\u05D4 \u05E0\u05E2\u05E8\u05DB\u05D4 \u05D4\u05D0\u05D5\u05DC\u05D9\u05DE\u05E4\u05D9\u05D0\u05D3\u05D4 \u05D4\u05DE\u05D5\u05D3\u05E8\u05E0\u05D9\u05EA \u05D4\u05E8\u05D0\u05E9\u05D5\u05E0\u05D4 \u05D1-1896?", a: ["\u05E4\u05E8\u05D9\u05D6", "\u05D0\u05EA\u05D5\u05E0\u05D4", "\u05DC\u05D5\u05E0\u05D3\u05D5\u05DF"], c: 1, f: "\u05D1\u05D0\u05E6\u05D8\u05D3\u05D9\u05D5\u05DF \u05D4\u05E4\u05E0\u05D0\u05EA\u05D9\u05E0\u05D0\u05D9 \u05D1\u05D0\u05EA\u05D5\u05E0\u05D4, \u05DB\u05D5\u05DC\u05D5 \u05DE\u05E9\u05D9\u05E9." }
+    { q: "מהי בירת יוון?", a: ["אתונה", "רומא", "איסטנבול"], c: 0, f: "נכון! אתונה היא אחת הערים העתיקות בעולם." },
+    { q: "על שם איזו אלה נקראת אתונה?", a: ["אפרודיטה", "אתנה, אלת החוכמה", "הרה"], c: 1, f: "לפי המיתוס, אתנה נתנה לעיר עץ זית והתושבים בחרו בה." },
+    { q: "איזה מקדש מפורסם עומד על האקרופוליס?", a: ["הפרתנון", "הקולוסיאום", "הפירמידה"], c: 0, f: "הפרתנון נבנה לפני כ-2,500 שנה לכבוד אתנה." },
+    { q: "איזה אל שולט בים?", a: ["זאוס", "הדס", "פוסידון"], c: 2, f: "פוסידון, ובידו קלשון. מקדש שלו עומד בסוניון." },
+    { q: "כמה אותיות יש באלפבית היווני?", a: ["24", "22", "30"], c: 0, f: "מאלפא ועד אומגה, 24 אותיות." },
+    { q: "איפה נערכה האולימפיאדה המודרנית הראשונה ב-1896?", a: ["פריז", "אתונה", "לונדון"], c: 1, f: "באצטדיון הפנאתינאי באתונה, כולו משיש." }
   ];
   function Quiz() {
     const [i, setI] = (0, import_react23.useState)(0);
@@ -12172,9 +12172,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     }, [done]);
     if (done) return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm", children: [
       /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm-big", children: [
-        "\u05E1\u05D9\u05D9\u05DE\u05EA\u05DD! ",
+        "סיימתם! ",
         score,
-        " \u05DE\u05EA\u05D5\u05DA ",
+        " מתוך ",
         quiz.length,
         " \u{1F3C6}"
       ] }),
@@ -12182,14 +12182,14 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         setI(0);
         setPick(null);
         setScore(0);
-      }, children: "\u05E2\u05D5\u05D3 \u05E4\u05E2\u05DD" })
+      }, children: "עוד פעם" })
     ] });
     const cur = quiz[i];
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm", children: [
       /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm-meta", children: [
-        "\u05E9\u05D0\u05DC\u05D4 ",
+        "שאלה ",
         i + 1,
-        " \u05DE\u05EA\u05D5\u05DA ",
+        " מתוך ",
         quiz.length
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-q", children: cur.q }),
@@ -12208,24 +12208,24 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       )),
       pick !== null && /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(import_jsx_runtime21.Fragment, { children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm-fb", children: [
-          pick === cur.c ? "\u{1F389} " : "\u{1F642} \u05DB\u05DE\u05E2\u05D8. ",
+          pick === cur.c ? "\u{1F389} " : "\u{1F642} כמעט. ",
           cur.f
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", onClick: () => {
           setI(i + 1);
           setPick(null);
-        }, children: i + 1 === quiz.length ? "\u05DC\u05EA\u05D5\u05E6\u05D0\u05D4" : "\u05D4\u05D1\u05D0\u05D4" })
+        }, children: i + 1 === quiz.length ? "לתוצאה" : "הבאה" })
       ] })
     ] });
   }
   var words = [
-    { g: "\u039A\u03B1\u03BB\u03B7\u03BC\u03AD\u03C1\u03B1", t: "kalim\xE9ra", h: "\u05D1\u05D5\u05E7\u05E8 \u05D8\u05D5\u05D1" },
-    { g: "\u0395\u03C5\u03C7\u03B1\u03C1\u03B9\u03C3\u03C4\u03CE", t: "efcharist\xF3", h: "\u05EA\u05D5\u05D3\u05D4" },
-    { g: "\u03A0\u03B1\u03C1\u03B1\u03BA\u03B1\u03BB\u03CE", t: "parakal\xF3", h: "\u05D1\u05D1\u05E7\u05E9\u05D4" },
-    { g: "\u039D\u03B1\u03B9 / \u038C\u03C7\u03B9", t: "ne / \xF3chi", h: "\u05DB\u05DF / \u05DC\u05D0" },
-    { g: "\u039D\u03B5\u03C1\u03CC", t: "ner\xF3", h: "\u05DE\u05D9\u05DD" },
-    { g: "\u03A0\u03B1\u03B3\u03C9\u03C4\u03CC", t: "pagot\xF3", h: "\u05D2\u05DC\u05D9\u05D3\u05D4" },
-    { g: "\u0393\u03B5\u03B9\u03B1 \u03C3\u03BF\u03C5", t: "ya su", h: "\u05E9\u05DC\u05D5\u05DD" }
+    { g: "\u039A\u03B1\u03BB\u03B7\u03BC\u03AD\u03C1\u03B1", t: "kalim\xE9ra", h: "בוקר טוב" },
+    { g: "\u0395\u03C5\u03C7\u03B1\u03C1\u03B9\u03C3\u03C4\u03CE", t: "efcharist\xF3", h: "תודה" },
+    { g: "\u03A0\u03B1\u03C1\u03B1\u03BA\u03B1\u03BB\u03CE", t: "parakal\xF3", h: "בבקשה" },
+    { g: "\u039D\u03B1\u03B9 / \u038C\u03C7\u03B9", t: "ne / \xF3chi", h: "כן / לא" },
+    { g: "\u039D\u03B5\u03C1\u03CC", t: "ner\xF3", h: "מים" },
+    { g: "\u03A0\u03B1\u03B3\u03C9\u03C4\u03CC", t: "pagot\xF3", h: "גלידה" },
+    { g: "\u0393\u03B5\u03B9\u03B1 \u03C3\u03BF\u03C5", t: "ya su", h: "שלום" }
   ];
   function Words() {
     const [open, setOpen] = (0, import_react23.useState)({});
@@ -12234,7 +12234,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       if (opened === words.length) stamp("words");
     }, [opened]);
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "\u05DC\u05D7\u05E6\u05D5 \u05E2\u05DC \u05DB\u05E8\u05D8\u05D9\u05E1 \u05DB\u05D3\u05D9 \u05DC\u05D2\u05DC\u05D5\u05EA \u05D0\u05EA \u05D4\u05EA\u05E8\u05D2\u05D5\u05DD. \u05E0\u05E1\u05D5 \u05DC\u05D5\u05DE\u05E8 \u05D1\u05E7\u05D5\u05DC!" }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "לחצו על כרטיס כדי לגלות את התרגום. נסו לומר בקול!" }),
       /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "wd-grid", children: words.map((w, k2) => /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("button", { className: "wd" + (open[k2] ? " open" : ""), onClick: () => setOpen({ ...open, [k2]: !open[k2] }), children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "wd-g", dir: "ltr", children: w.g }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "wd-t", dir: "ltr", children: w.t }),
@@ -12243,12 +12243,12 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     ] });
   }
   var pairs = [
-    { e: "\u{1F3DB}\uFE0F", n: "\u05E4\u05E8\u05EA\u05E0\u05D5\u05DF" },
-    { e: "\u{1F989}", n: "\u05D9\u05E0\u05E9\u05D5\u05E3 \u05E9\u05DC \u05D0\u05EA\u05E0\u05D4" },
-    { e: "\u{1F531}", n: "\u05E7\u05DC\u05E9\u05D5\u05DF \u05E4\u05D5\u05E1\u05D9\u05D3\u05D5\u05DF" },
-    { e: "\u26A1", n: "\u05D1\u05E8\u05E7 \u05E9\u05DC \u05D6\u05D0\u05D5\u05E1" },
-    { e: "\u{1FAD2}", n: "\u05E2\u05E5 \u05D4\u05D6\u05D9\u05EA" },
-    { e: "\u{1F3C5}", n: "\u05D0\u05D5\u05DC\u05D9\u05DE\u05E4\u05D9\u05D0\u05D3\u05D4" }
+    { e: "\u{1F3DB}\uFE0F", n: "פרתנון" },
+    { e: "\u{1F989}", n: "ינשוף של אתנה" },
+    { e: "\u{1F531}", n: "קלשון פוסידון" },
+    { e: "\u26A1", n: "ברק של זאוס" },
+    { e: "\u{1FAD2}", n: "עץ הזית" },
+    { e: "\u{1F3C5}", n: "אולימפיאדה" }
   ];
   function shuffled() {
     const cards = pairs.flatMap((p) => [{ id: p.n + "a", key: p.n, label: p.e }, { id: p.n + "b", key: p.n, label: p.n }]);
@@ -12282,30 +12282,30 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     }, [won]);
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm", children: [
       /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm-meta", children: [
-        "\u05DE\u05E6\u05D0\u05D5 \u05D6\u05D5\u05D2\u05D5\u05EA: \u05E1\u05DE\u05DC \u05D5\u05E9\u05DD. \u05DE\u05D4\u05DC\u05DB\u05D9\u05DD: ",
+        "מצאו זוגות: סמל ושם. מהלכים: ",
         moves
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "mm-grid", children: cards.map((c) => {
         const shown = up.includes(c.id) || found.includes(c.key);
-        return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "mm" + (shown ? " show" : "") + (found.includes(c.key) ? " ok" : ""), onClick: () => click(c.id), "aria-label": shown ? c.label : "\u05E7\u05DC\u05E3 \u05D4\u05E4\u05D5\u05DA", children: shown ? c.label : "?" }, c.id);
+        return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "mm" + (shown ? " show" : "") + (found.includes(c.key) ? " ok" : ""), onClick: () => click(c.id), "aria-label": shown ? c.label : "קלף הפוך", children: shown ? c.label : "?" }, c.id);
       }) }),
       won && /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm-big", children: [
-        "\u05DB\u05DC \u05D4\u05DB\u05D1\u05D5\u05D3! \u05E1\u05D9\u05D9\u05DE\u05EA\u05DD \u05D1-",
+        "כל הכבוד! סיימתם ב-",
         moves,
-        " \u05DE\u05D4\u05DC\u05DB\u05D9\u05DD \u{1F389}"
+        " מהלכים \u{1F389}"
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", onClick: () => {
         setCards(shuffled());
         setUp([]);
         setFound([]);
         setMoves(0);
-      }, children: "\u05DE\u05E9\u05D7\u05E7 \u05D7\u05D3\u05E9" })
+      }, children: "משחק חדש" })
     ] });
   }
   var myths = [
-    { n: "\u05D0\u05EA\u05E0\u05D4 \u05D5\u05D4\u05D6\u05D9\u05EA", d: "\u05D0\u05EA\u05E0\u05D4 \u05D5\u05E4\u05D5\u05E1\u05D9\u05D3\u05D5\u05DF \u05D4\u05EA\u05D7\u05E8\u05D5 \u05DE\u05D9 \u05D9\u05D9\u05EA\u05DF \u05DC\u05E2\u05D9\u05E8 \u05D4\u05DE\u05EA\u05E0\u05D4 \u05D4\u05D8\u05D5\u05D1\u05D4 \u05D1\u05D9\u05D5\u05EA\u05E8. \u05E4\u05D5\u05E1\u05D9\u05D3\u05D5\u05DF \u05D4\u05E4\u05D9\u05E7 \u05DE\u05E2\u05D9\u05D9\u05DF \u05DE\u05D9 \u05D9\u05DD, \u05D5\u05D0\u05EA\u05E0\u05D4 \u05E0\u05D8\u05E2\u05D4 \u05E2\u05E5 \u05D6\u05D9\u05EA. \u05D4\u05EA\u05D5\u05E9\u05D1\u05D9\u05DD \u05D1\u05D7\u05E8\u05D5 \u05D1\u05D6\u05D9\u05EA, \u05D5\u05D4\u05E2\u05D9\u05E8 \u05E7\u05D9\u05D1\u05DC\u05D4 \u05D0\u05EA \u05E9\u05DE\u05D4." },
-    { n: "\u05D4\u05E7\u05DC\u05E9\u05D5\u05DF \u05E9\u05DC \u05E4\u05D5\u05E1\u05D9\u05D3\u05D5\u05DF", d: "\u05DC\u05E4\u05D9 \u05D4\u05D0\u05D2\u05D3\u05D4, \u05E4\u05D5\u05E1\u05D9\u05D3\u05D5\u05DF \u05D4\u05DB\u05D4 \u05D1\u05D0\u05D3\u05DE\u05D4 \u05D1\u05E7\u05DC\u05E9\u05D5\u05DF \u05E9\u05DC\u05D5 \u05E2\u05DC \u05D4\u05D0\u05E7\u05E8\u05D5\u05E4\u05D5\u05DC\u05D9\u05E1. \u05DE\u05E7\u05D3\u05E9 \u05E9\u05DC\u05D5 \u05E2\u05D5\u05DE\u05D3 \u05E2\u05D3 \u05D4\u05D9\u05D5\u05DD \u05E2\u05DC \u05E6\u05D5\u05E7 \u05DE\u05E2\u05DC \u05D4\u05D9\u05DD \u05D1\u05E1\u05D5\u05E0\u05D9\u05D5\u05DF." },
-    { n: "\u05D4\u05DE\u05D1\u05D5\u05DA \u05D5\u05D4\u05DE\u05D9\u05E0\u05D5\u05D8\u05D0\u05D5\u05E8", d: "\u05EA\u05D6\u05D0\u05D5\u05E1, \u05D2\u05D9\u05D1\u05D5\u05E8 \u05D0\u05EA\u05D5\u05E0\u05D0\u05D9, \u05D4\u05DC\u05DA \u05DC\u05DE\u05D1\u05D5\u05DA \u05D1\u05DB\u05E8\u05EA\u05D9\u05DD \u05DB\u05D3\u05D9 \u05DC\u05D4\u05D1\u05D9\u05E1 \u05D0\u05EA \u05D4\u05DE\u05D9\u05E0\u05D5\u05D8\u05D0\u05D5\u05E8, \u05D7\u05E6\u05D9 \u05D0\u05D9\u05E9 \u05D7\u05E6\u05D9 \u05E9\u05D5\u05E8, \u05D5\u05D7\u05D6\u05E8 \u05D1\u05E2\u05D6\u05E8\u05EA \u05D7\u05D5\u05D8." }
+    { n: "אתנה והזית", d: "אתנה ופוסידון התחרו מי ייתן לעיר המתנה הטובה ביותר. פוסידון הפיק מעיין מי ים, ואתנה נטעה עץ זית. התושבים בחרו בזית, והעיר קיבלה את שמה." },
+    { n: "הקלשון של פוסידון", d: "לפי האגדה, פוסידון הכה באדמה בקלשון שלו על האקרופוליס. מקדש שלו עומד עד היום על צוק מעל הים בסוניון." },
+    { n: "המבוך והמינוטאור", d: "תזאוס, גיבור אתונאי, הלך למבוך בכרתים כדי להביס את המינוטאור, חצי איש חצי שור, וחזר בעזרת חוט." }
   ];
   function Myths() {
     const [o, setO] = (0, import_react23.useState)(null);
@@ -12447,7 +12447,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     };
     const unlock = async () => {
       if (!pw) return;
-      setAdminMsg("\u05D1\u05D5\u05D3\u05E7\u05D9\u05DD\u2026");
+      setAdminMsg("בודקים…");
       try {
         const r = await fetch(SUPA_URL + "/rest/v1/rpc/check_wall_admin", { method: "POST", headers: { ...SUPA_H, "Content-Type": "application/json" }, body: JSON.stringify({ secret: pw }) });
         const ok = await r.json();
@@ -12461,9 +12461,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             sessionStorage.setItem("wall.admin", pw);
           } catch {
           }
-        } else setAdminMsg("\u05D4\u05E1\u05D9\u05E1\u05DE\u05D4 \u05DC\u05D0 \u05E0\u05DB\u05D5\u05E0\u05D4.");
+        } else setAdminMsg("הסיסמה לא נכונה.");
       } catch {
-        setAdminMsg("\u05D0\u05D9\u05DF \u05D7\u05D9\u05D1\u05D5\u05E8 \u05DB\u05E8\u05D2\u05E2. \u05E0\u05E1\u05D5 \u05E9\u05D5\u05D1.");
+        setAdminMsg("אין חיבור כרגע. נסו שוב.");
       }
     };
     const lock = () => {
@@ -12484,61 +12484,61 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       }
     };
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", onClick: headingTap, children: "\u05DE\u05E9\u05D0\u05D9\u05E8\u05D9\u05DD \u05E4\u05EA\u05E7 \u05DC\u05DB\u05D5\u05DC\u05DD - \u05DE\u05D4 \u05E9\u05DB\u05D5\u05EA\u05D1\u05D9\u05DD \u05DB\u05D0\u05DF \u05DE\u05D5\u05E6\u05D2 \u05DC\u05DB\u05DC \u05D4\u05DE\u05E9\u05E4\u05D7\u05D4, \u05DE\u05DB\u05DC \u05DE\u05DB\u05E9\u05D9\u05E8, \u05D1\u05DC\u05D9 \u05D4\u05E8\u05E9\u05DE\u05D4." }),
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("input", { className: "req-in", value: name, onChange: (e2) => setName(e2.target.value), placeholder: "\u05DE\u05D9 \u05DB\u05D5\u05EA\u05D1? (\u05DC\u05D0 \u05D7\u05D5\u05D1\u05D4)", maxLength: 20 }),
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("textarea", { className: "req-ta", value: text, onChange: (e2) => setText(e2.target.value), placeholder: "\u05DB\u05EA\u05D1\u05D5 \u05DE\u05E9\u05D4\u05D5 \u05E0\u05D7\u05DE\u05D3 \u05DC\u05D8\u05D9\u05D5\u05DC...", rows: 2, maxLength: 400 }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", onClick: headingTap, children: "משאירים פתק לכולם - מה שכותבים כאן מוצג לכל המשפחה, מכל מכשיר, בלי הרשמה." }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("input", { className: "req-in", value: name, onChange: (e2) => setName(e2.target.value), placeholder: "מי כותב? (לא חובה)", maxLength: 20 }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("textarea", { className: "req-ta", value: text, onChange: (e2) => setText(e2.target.value), placeholder: "כתבו משהו נחמד לטיול...", rows: 2, maxLength: 400 }),
       /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "wall-photo-row", children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("label", { className: "gm-btn wall-photo-btn", children: [
-          "\u{1F4F7} \u05DC\u05D4\u05D5\u05E1\u05D9\u05E3 \u05EA\u05DE\u05D5\u05E0\u05D4",
+          "\u{1F4F7} להוסיף תמונה",
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("input", { type: "file", accept: "image/*", style: { display: "none" }, onChange: (e2) => {
             onPhoto(e2.target.files?.[0]);
             e2.target.value = "";
           } })
         ] }),
         img && /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("span", { className: "wall-thumb", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("img", { src: img, alt: "\u05EA\u05DE\u05D5\u05E0\u05D4 \u05DC\u05E4\u05EA\u05E7" }),
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { type: "button", className: "wall-thumb-x", onClick: () => setImg(null), "aria-label": "\u05D4\u05E1\u05E8\u05EA \u05EA\u05DE\u05D5\u05E0\u05D4", children: "\u2715" })
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("img", { src: img, alt: "תמונה לפתק" }),
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { type: "button", className: "wall-thumb-x", onClick: () => setImg(null), "aria-label": "הסרת תמונה", children: "\u2715" })
         ] })
       ] }),
-      imgErr && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-fb", children: "\u05D4\u05EA\u05DE\u05D5\u05E0\u05D4 \u05D2\u05D3\u05D5\u05DC\u05D4 \u05DE\u05D3\u05D9 \u05D0\u05D5 \u05DC\u05D0 \u05E0\u05D8\u05E2\u05E0\u05D4. \u05E0\u05E1\u05D5 \u05EA\u05DE\u05D5\u05E0\u05D4 \u05D0\u05D7\u05E8\u05EA." }),
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", disabled: !text.trim() && !img || st3 === "sending", onClick: send, children: st3 === "sending" ? "\u05DE\u05D3\u05D1\u05D9\u05E7\u05D9\u05DD\u2026" : "\u05DC\u05D4\u05D3\u05D1\u05D9\u05E7 \u05E2\u05DC \u05D4\u05E7\u05D9\u05E8 \u{1F4CC}" }),
-      st3 === "err" && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-fb", children: "\u05DC\u05D0 \u05E0\u05E9\u05DE\u05E8. \u05D1\u05D3\u05E7\u05D5 \u05D7\u05D9\u05D1\u05D5\u05E8 \u05D5\u05E0\u05E1\u05D5 \u05E9\u05D5\u05D1." }),
+      imgErr && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-fb", children: "התמונה גדולה מדי או לא נטענה. נסו תמונה אחרת." }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", disabled: !text.trim() && !img || st3 === "sending", onClick: send, children: st3 === "sending" ? "מדביקים…" : "להדביק על הקיר \u{1F4CC}" }),
+      st3 === "err" && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-fb", children: "לא נשמר. בדקו חיבור ונסו שוב." }),
       /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "wall-grid", children: [
-        notes === null && !loadErr && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "\u05D8\u05D5\u05E2\u05E0\u05D9\u05DD \u05D0\u05EA \u05D4\u05E7\u05D9\u05E8\u2026" }),
-        loadErr && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "\u05D4\u05E7\u05D9\u05E8 \u05DC\u05D0 \u05D6\u05DE\u05D9\u05DF \u05DB\u05E8\u05D2\u05E2. \u05E0\u05E1\u05D5 \u05DC\u05E8\u05E2\u05E0\u05DF \u05D1\u05E2\u05D5\u05D3 \u05E8\u05D2\u05E2." }),
+        notes === null && !loadErr && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "טוענים את הקיר…" }),
+        loadErr && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "הקיר לא זמין כרגע. נסו לרענן בעוד רגע." }),
         notes && [...notes].reverse().map((n, i) => /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "wall-note", style: { background: NOTE_COLORS[(i + n.id.length) % NOTE_COLORS.length], "--tilt": `${i * 37 % 5 - 2}deg` }, children: [
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "wall-tape", "aria-hidden": true }),
-          admin && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "wall-del", onClick: () => del(n.id), "aria-label": "\u05DE\u05D7\u05D9\u05E7\u05EA \u05E4\u05EA\u05E7", children: "\u2715" }),
-          n.img && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("img", { className: "wall-img", src: n.img, alt: "\u05EA\u05DE\u05D5\u05E0\u05D4 \u05DE\u05D4\u05DE\u05E9\u05E4\u05D7\u05D4", loading: "lazy" }),
+          admin && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "wall-del", onClick: () => del(n.id), "aria-label": "מחיקת פתק", children: "\u2715" }),
+          n.img && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("img", { className: "wall-img", src: n.img, alt: "תמונה מהמשפחה", loading: "lazy" }),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "wall-text", children: n.text }),
           n.name && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "wall-who", children: n.name })
         ] }, n.id)),
-        notes && notes.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "\u05D4\u05E7\u05D9\u05E8 \u05E8\u05D9\u05E7. \u05DE\u05D9 \u05DE\u05D3\u05D1\u05D9\u05E7 \u05E8\u05D0\u05E9\u05D5\u05DF?" })
+        notes && notes.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "הקיר ריק. מי מדביק ראשון?" })
       ] }),
       adminOpen && !admin && /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm-fb", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "\u05D0\u05D6\u05D5\u05E8 \u05D4\u05D4\u05E0\u05D4\u05DC\u05D4 \u{1F510}" }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("input", { className: "req-in", type: "password", value: pw, onChange: (e2) => setPw(e2.target.value), placeholder: "\u05E1\u05D9\u05E1\u05DE\u05EA \u05D4\u05D4\u05E0\u05D4\u05DC\u05D4", onKeyDown: (e2) => {
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "אזור ההנהלה \u{1F510}" }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("input", { className: "req-in", type: "password", value: pw, onChange: (e2) => setPw(e2.target.value), placeholder: "סיסמת ההנהלה", onKeyDown: (e2) => {
           if (e2.key === "Enter") unlock();
         } }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { style: { display: "flex", gap: 8, marginTop: 8 }, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", onClick: unlock, children: "\u05E4\u05EA\u05D9\u05D7\u05D4" }),
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", onClick: unlock, children: "פתיחה" }),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn replay", onClick: () => {
             setAdminOpen(false);
             setPw("");
             setAdminMsg("");
-          }, children: "\u05E1\u05D2\u05D9\u05E8\u05D4" })
+          }, children: "סגירה" })
         ] }),
         adminMsg && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", style: { marginTop: 6 }, children: adminMsg })
       ] }),
       admin && /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm-meta", children: [
-        "\u05DE\u05E6\u05D1 \u05D4\u05E0\u05D4\u05DC\u05D4 \u05E4\u05E2\u05D9\u05DC - \u05D0\u05E4\u05E9\u05E8 \u05DC\u05DE\u05D7\u05D5\u05E7 \u05E4\u05EA\u05E7\u05D9\u05DD \u05E2\u05DD \u05D4-\u2715. ",
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "wall-lock", onClick: lock, children: "\u05E0\u05E2\u05D9\u05DC\u05D4" })
+        "מצב הנהלה פעיל - אפשר למחוק פתקים עם ה-\u2715. ",
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "wall-lock", onClick: lock, children: "נעילה" })
       ] })
     ] });
   }
   var API = "https://abacus.jasoncameron.dev";
   var NS = "athens27-fam-g2k8xq";
-  var pollOpts = ["\u{1F3D6}\uFE0F \u05D9\u05DD \u05D5\u05D7\u05D5\u05E3", "\u{1F3DB}\uFE0F \u05D0\u05EA\u05E8\u05D9\u05DD \u05E2\u05EA\u05D9\u05E7\u05D9\u05DD", "\u{1F37D}\uFE0F \u05D0\u05D5\u05DB\u05DC \u05D9\u05D5\u05D5\u05E0\u05D9", "\u{1F6CD}\uFE0F \u05E9\u05D5\u05E7 \u05D5\u05E7\u05E0\u05D9\u05D5\u05EA", "\u{1F3A2} \u05E4\u05D0\u05E8\u05E7 \u05E9\u05E2\u05E9\u05D5\u05E2\u05D9\u05DD / \u05D0\u05D8\u05E8\u05E7\u05E6\u05D9\u05D4", "\u{1F305} \u05E9\u05E7\u05D9\u05E2\u05D4 \u05D1\u05E1\u05D5\u05E0\u05D9\u05D5\u05DF"];
+  var pollOpts = ["\u{1F3D6}\uFE0F ים וחוף", "\u{1F3DB}\uFE0F אתרים עתיקים", "\u{1F37D}\uFE0F אוכל יווני", "\u{1F6CD}\uFE0F שוק וקניות", "\u{1F3A2} פארק שעשועים / אטרקציה", "\u{1F305} שקיעה בסוניון"];
   var keyOf = (_who, i) => `opt${i}`;
   var sleep = (ms2) => new Promise((r) => setTimeout(r, ms2));
   async function hit(k2) {
@@ -12586,17 +12586,17 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       try {
         for (const i of mine.picks) await hit(keyOf("", i));
         setMine({ ...mine, voted: true });
-        setMsg("\u05EA\u05D5\u05D3\u05D4! \u05D4\u05D4\u05E6\u05D1\u05E2\u05D4 \u05E0\u05E7\u05DC\u05D8\u05D4 \u{1F389}");
+        setMsg("תודה! ההצבעה נקלטה \u{1F389}");
         setTimeout(load, 500);
       } catch {
-        setMsg("\u05D4\u05D4\u05E6\u05D1\u05E2\u05D4 \u05DC\u05D0 \u05E0\u05E7\u05DC\u05D8\u05D4. \u05E0\u05E1\u05D5 \u05E9\u05D5\u05D1.");
+        setMsg("ההצבעה לא נקלטה. נסו שוב.");
       }
       setBusy(false);
     };
     const total = (i) => tally ? tally[keyOf("", i)] || 0 : 0;
     const max = Math.max(1, ...pollOpts.map((_3, i) => total(i)));
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: mine.voted ? "\u05D4\u05E6\u05D1\u05E2\u05EA\u05DD! \u05D4\u05EA\u05D5\u05E6\u05D0\u05D5\u05EA \u05DE\u05EA\u05E2\u05D3\u05DB\u05E0\u05D5\u05EA \u05DC\u05DB\u05D5\u05DC\u05DD." : `\u05D1\u05D7\u05E8\u05D5 \u05DB\u05DC \u05DE\u05D4 \u05E9\u05DE\u05EA\u05D7\u05E9\u05E7 \u05DC\u05DB\u05DD \u05DC\u05E2\u05E9\u05D5\u05EA${mine.picks.length ? ` (\u05E1\u05D9\u05DE\u05E0\u05EA\u05DD ${mine.picks.length})` : ""} (\u05D0\u05E4\u05E9\u05E8 \u05D0\u05EA \u05D4\u05DB\u05DC!) \u05D5\u05D0\u05D6 \u05DC\u05D7\u05E6\u05D5 \u05E9\u05DC\u05D7\u05D5. \u05D1\u05DC\u05D9 \u05D4\u05E8\u05E9\u05DE\u05D4.` }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: mine.voted ? "הצבעתם! התוצאות מתעדכנות לכולם." : `בחרו כל מה שמתחשק לכם לעשות${mine.picks.length ? ` (סימנתם ${mine.picks.length})` : ""} (אפשר את הכל!) ואז לחצו שלחו. בלי הרשמה.` }),
       pollOpts.map((o, i) => /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("button", { className: "gm-opt pl" + (mine.picks.includes(i) ? " ok" : ""), "aria-pressed": mine.picks.includes(i), onClick: () => toggle(i), children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "pl-bar", style: { width: tally ? `${total(i) / max * 100}%` : "0%" } }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("span", { className: "pl-row", children: [
@@ -12607,8 +12607,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "pl-n", children: tally ? total(i) : "..." })
         ] })
       ] }, o)),
-      !mine.voted && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", disabled: !mine.picks.length || busy, onClick: submit, children: "\u05E9\u05DC\u05D7\u05D5 \u05D4\u05E6\u05D1\u05E2\u05D4" }),
-      mine.voted && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", onClick: () => setMine({ who: mine.who, picks: [], voted: false }), children: "\u05DE\u05D9\u05E9\u05D4\u05D5 \u05E0\u05D5\u05E1\u05E3 \u05DE\u05E6\u05D1\u05D9\u05E2 \u05D1\u05DE\u05DB\u05E9\u05D9\u05E8 \u05D4\u05D6\u05D4" }),
+      !mine.voted && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", disabled: !mine.picks.length || busy, onClick: submit, children: "שלחו הצבעה" }),
+      mine.voted && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", onClick: () => setMine({ who: mine.who, picks: [], voted: false }), children: "מישהו נוסף מצביע במכשיר הזה" }),
       /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-fb", style: { display: msg ? "block" : "none" }, children: msg })
     ] });
   }
@@ -12620,8 +12620,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       if (!text.trim() || st3 === "sending") return;
       setSt("sending");
       try {
-        const body = `\u05D1\u05E7\u05E9\u05D4 \u05DE\u05D9\u05D5\u05D7\u05D3\u05EA \u05D7\u05D3\u05E9\u05D4 - \u05D9\u05D5\u05D5\u05DF 2027
-\u05DE\u05D0\u05EA: ${name.trim() || "\u05DC\u05D0 \u05E6\u05D5\u05D9\u05DF"}
+        const body = `בקשה מיוחדת חדשה - יוון 2027
+מאת: ${name.trim() || "לא צוין"}
 
 ${text.trim()}`;
         const r = await fetch("https://ntfy.sh/athens2027-bruchim-mgmt-k7x2q9w4", { method: "POST", body });
@@ -12635,23 +12635,23 @@ ${text.trim()}`;
       }
     };
     if (st3 === "ok") return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-big", children: "\u05D4\u05D1\u05E7\u05E9\u05D4 \u05E0\u05E9\u05DC\u05D7\u05D4 \u05DC\u05D4\u05E0\u05D4\u05DC\u05D4 \u{1F4EE}" }),
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-fb", children: "\u05D0\u05D5\u05E8 \u05DE\u05E7\u05D1\u05DC \u05D0\u05D5\u05EA\u05D4 \u05D5\u05D9\u05D7\u05D6\u05D5\u05E8 \u05D0\u05DC\u05D9\u05DB\u05DD. \u05EA\u05D5\u05D3\u05D4!" }),
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", onClick: () => setSt("idle"), children: "\u05DC\u05E9\u05DC\u05D5\u05D7 \u05E2\u05D5\u05D3 \u05D1\u05E7\u05E9\u05D4" })
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-big", children: "הבקשה נשלחה להנהלה \u{1F4EE}" }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-fb", children: "אור מקבל אותה ויחזור אליכם. תודה!" }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", onClick: () => setSt("idle"), children: "לשלוח עוד בקשה" })
     ] });
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "\u05D3\u05D9\u05D0\u05D8\u05D4 \u05DE\u05D9\u05D5\u05D7\u05D3\u05EA? \u05D7\u05D3\u05E8 \u05E7\u05E8\u05D5\u05D1 \u05DC\u05D4\u05D5\u05E8\u05D9\u05DD? \u05D4\u05E4\u05EA\u05E2\u05D4 \u05DC\u05D9\u05D5\u05DD \u05D4\u05D5\u05DC\u05D3\u05EA? \u05DB\u05EA\u05D1\u05D5 \u05DB\u05D0\u05DF." }),
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("input", { className: "req-in", value: name, onChange: (e2) => setName(e2.target.value), placeholder: "\u05DE\u05D9 \u05DE\u05D1\u05E7\u05E9? (\u05DC\u05D0 \u05D7\u05D5\u05D1\u05D4)", maxLength: 60 }),
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("textarea", { className: "req-ta", value: text, onChange: (e2) => setText(e2.target.value), placeholder: "\u05DE\u05D4 \u05D4\u05D1\u05E7\u05E9\u05D4?", rows: 4, maxLength: 1200 }),
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", disabled: !text.trim() || st3 === "sending", onClick: send, children: st3 === "sending" ? "\u05E9\u05D5\u05DC\u05D7\u05D9\u05DD\u2026" : "\u05DC\u05E9\u05DC\u05D5\u05D7 \u05DC\u05D4\u05E0\u05D4\u05DC\u05D4 \u{1F4EE}" }),
-      st3 === "err" && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-fb", children: "\u05DC\u05D0 \u05E0\u05E9\u05DC\u05D7. \u05D1\u05D3\u05E7\u05D5 \u05D7\u05D9\u05D1\u05D5\u05E8 \u05D5\u05E0\u05E1\u05D5 \u05E9\u05D5\u05D1." })
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "דיאטה מיוחדת? חדר קרוב להורים? הפתעה ליום הולדת? כתבו כאן." }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("input", { className: "req-in", value: name, onChange: (e2) => setName(e2.target.value), placeholder: "מי מבקש? (לא חובה)", maxLength: 60 }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("textarea", { className: "req-ta", value: text, onChange: (e2) => setText(e2.target.value), placeholder: "מה הבקשה?", rows: 4, maxLength: 1200 }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", disabled: !text.trim() || st3 === "sending", onClick: send, children: st3 === "sending" ? "שולחים…" : "לשלוח להנהלה \u{1F4EE}" }),
+      st3 === "err" && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-fb", children: "לא נשלח. בדקו חיבור ונסו שוב." })
     ] });
   }
   var STAMPS = [
-    { id: "quiz", e: "\u{1F3DB}\uFE0F", n: "\u05D0\u05DC\u05D5\u05E3 \u05D4\u05D7\u05D9\u05D3\u05D5\u05DF" },
-    { id: "memory", e: "\u{1F989}", n: "\u05D6\u05D9\u05DB\u05E8\u05D5\u05DF \u05E9\u05DC \u05D9\u05E0\u05E9\u05D5\u05E3" },
-    { id: "words", e: "\u{1F4AC}", n: "\u05D3\u05D5\u05D1\u05E8 \u05D4\u05D9\u05D5\u05D5\u05E0\u05D9\u05EA" },
-    { id: "myths", e: "\u{1F4DC}", n: "\u05D7\u05D5\u05E7\u05E8 \u05D4\u05D0\u05D2\u05D3\u05D5\u05EA" }
+    { id: "quiz", e: "\u{1F3DB}\uFE0F", n: "אלוף החידון" },
+    { id: "memory", e: "\u{1F989}", n: "זיכרון של ינשוף" },
+    { id: "words", e: "\u{1F4AC}", n: "דובר היוונית" },
+    { id: "myths", e: "\u{1F4DC}", n: "חוקר האגדות" }
   ];
   function Passport() {
     const [pp, setPp, saved] = iu("passport.v1", { kids: [], active: null });
@@ -12683,25 +12683,25 @@ ${text.trim()}`;
       setPp({ kids, active: pp.active === id ? kids[0]?.id || null : pp.active });
     };
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: '\u05DB\u05DC \u05D9\u05DC\u05D3 \u05E4\u05D5\u05EA\u05D7 \u05D3\u05E8\u05DB\u05D5\u05DF \u05D5\u05D1\u05D5\u05D7\u05E8 "\u05DE\u05D9 \u05DE\u05E9\u05D7\u05E7 \u05E2\u05DB\u05E9\u05D9\u05D5". \u05DB\u05DC \u05DE\u05E9\u05D7\u05E7 \u05E9\u05DE\u05E1\u05D9\u05D9\u05DE\u05D9\u05DD \u05DE\u05D5\u05E1\u05D9\u05E3 \u05D7\u05D5\u05EA\u05DE\u05EA, \u05D5\u05DE\u05D9 \u05E9\u05D0\u05D5\u05E1\u05E3 \u05D0\u05EA \u05DB\u05DC \u05D0\u05E8\u05D1\u05E2 \u05D4\u05D7\u05D5\u05EA\u05DE\u05D5\u05EA \u05D6\u05D5\u05DB\u05D4 \u05D1\u05E4\u05E8\u05E1 \u05D1\u05D8\u05D9\u05D5\u05DC (\u05D4\u05D4\u05E0\u05D4\u05DC\u05D4 \u05E2\u05D5\u05D3 \u05D7\u05D5\u05E9\u05D1\u05EA \u05E2\u05DC \u05E4\u05E8\u05E1 \u05DE\u05D2\u05E0\u05D9\u05D1 \u{1F60E}). \u05D4\u05D3\u05E8\u05DB\u05D5\u05DF \u05E0\u05E9\u05DE\u05E8 \u05D1\u05DE\u05DB\u05E9\u05D9\u05E8 \u05D4\u05D6\u05D4.' }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: 'כל ילד פותח דרכון ובוחר "מי משחק עכשיו". כל משחק שמסיימים מוסיף חותמת, ומי שאוסף את כל ארבע החותמות זוכה בפרס בטיול (ההנהלה עוד חושבת על פרס מגניב \u{1F60E}). הדרכון נשמר במכשיר הזה.' }),
       /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "pp-add", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("input", { className: "req-in", value: newName, onChange: (e2) => setNewName(e2.target.value), placeholder: "\u05E9\u05DD \u05D4\u05D9\u05DC\u05D3 \u05D0\u05D5 \u05D4\u05D9\u05DC\u05D3\u05D4", maxLength: 16, onKeyDown: (e2) => {
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("input", { className: "req-in", value: newName, onChange: (e2) => setNewName(e2.target.value), placeholder: "שם הילד או הילדה", maxLength: 16, onKeyDown: (e2) => {
           if (e2.key === "Enter") addKid();
         } }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", disabled: !newName.trim() || !saved.ready, onClick: addKid, children: "\u05E4\u05EA\u05D9\u05D7\u05EA \u05D3\u05E8\u05DB\u05D5\u05DF \u{1F6C2}" })
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "gm-btn", disabled: !newName.trim() || !saved.ready, onClick: addKid, children: "פתיחת דרכון \u{1F6C2}" })
       ] }),
-      pp.kids.length > 1 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "\u05DE\u05D9 \u05DE\u05E9\u05D7\u05E7 \u05E2\u05DB\u05E9\u05D9\u05D5?" }),
+      pp.kids.length > 1 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "מי משחק עכשיו?" }),
       pp.kids.length > 1 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "pp-tabs", children: pp.kids.map((k2) => /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { className: "pp-tab" + (pp.active === k2.id ? " on" : ""), onClick: () => setPp({ ...pp, active: k2.id }), children: k2.name }, k2.id)) }),
       pp.kids.map((k2) => (pp.kids.length === 1 || pp.active === k2.id) && /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "pp-book", children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "pp-head", children: [
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "pp-flag", children: "\u{1F1EC}\u{1F1F7}" }),
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("input", { className: "pp-name", value: k2.name, onChange: (e2) => rename(k2.id, e2.target.value), "aria-label": "\u05E9\u05DD \u05D1\u05D3\u05E8\u05DB\u05D5\u05DF", maxLength: 16 }),
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("input", { className: "pp-name", value: k2.name, onChange: (e2) => rename(k2.id, e2.target.value), "aria-label": "שם בדרכון", maxLength: 16 }),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("span", { className: "pp-count", children: [
             k2.stamps.length,
             "/",
             STAMPS.length
           ] }),
-          /* @__PURE__ */ admin && (0, import_jsx_runtime21.jsx)("button", { className: "pp-del", onClick: () => remove(k2.id), "aria-label": "\u05DE\u05D7\u05D9\u05E7\u05EA \u05D3\u05E8\u05DB\u05D5\u05DF", children: "\u2715" })
+          /* @__PURE__ */ admin && (0, import_jsx_runtime21.jsx)("button", { className: "pp-del", onClick: () => remove(k2.id), "aria-label": "מחיקת דרכון", children: "\u2715" })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "pp-stamps", children: STAMPS.map((st3) => {
           const got = k2.stamps.includes(st3.id);
@@ -12711,22 +12711,22 @@ ${text.trim()}`;
             /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "pp-stamp-n", children: st3.n })
           ] }, st3.id);
         }) }),
-        k2.stamps.length === STAMPS.length && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-big", children: "\u05D4\u05D3\u05E8\u05DB\u05D5\u05DF \u05DE\u05DC\u05D0! \u05DB\u05DC \u05D4\u05DB\u05D1\u05D5\u05D3, \u05E9\u05D2\u05E8\u05D9\u05E8 \u05D9\u05D5\u05D5\u05DF \u05E8\u05E9\u05DE\u05D9 \u{1F3C5}" })
+        k2.stamps.length === STAMPS.length && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-big", children: "הדרכון מלא! כל הכבוד, שגריר יוון רשמי \u{1F3C5}" })
       ] }, k2.id)),
-      pp.kids.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "\u05E2\u05D5\u05D3 \u05D0\u05D9\u05DF \u05D3\u05E8\u05DB\u05D5\u05E0\u05D9\u05DD. \u05DE\u05D9 \u05E8\u05D0\u05E9\u05D5\u05DF?" })
+      pp.kids.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "עוד אין דרכונים. מי ראשון?" })
     ] });
   }
   var MISSIONS = [
-    { id: "statue", e: "\u{1F5FF}", t: "\u05EA\u05DE\u05D5\u05E0\u05D4 \u05DE\u05E9\u05E4\u05D7\u05EA\u05D9\u05EA \u05E2\u05DD \u05E4\u05E1\u05DC - \u05DB\u05D5\u05DC\u05DD \u05DE\u05D7\u05E7\u05D9\u05DD \u05D0\u05EA \u05D4\u05EA\u05E0\u05D5\u05D7\u05D4 \u05E9\u05DC\u05D5!", p: 10 },
-    { id: "souvlaki", e: "\u{1F959}", t: "\u05DC\u05D4\u05D6\u05DE\u05D9\u05DF \u05E1\u05D5\u05D1\u05DC\u05D0\u05E7\u05D9 \u05D1\u05D9\u05D5\u05D5\u05E0\u05D9\u05EA \u05D1\u05DC\u05D9 \u05DC\u05D2\u05DE\u05D2\u05DD (\u05D0\u05D5 \u05DC\u05E4\u05D7\u05D5\u05EA \u05DC\u05E0\u05E1\u05D5\u05EA \u05DE\u05DE\u05E9 \u05D7\u05D6\u05E7)", p: 15 },
-    { id: "olive", e: "\u{1FAD2}", t: "\u05DC\u05D8\u05E2\u05D5\u05DD \u05D6\u05D9\u05EA \u05D9\u05D5\u05D5\u05E0\u05D9 \u05D1\u05DC\u05D9 \u05DC\u05E2\u05E9\u05D5\u05EA \u05E4\u05E8\u05E6\u05D5\u05E3. \u05D1\u05DB\u05DC\u05DC \u05DC\u05D0 \u05E7\u05DC.", p: 5 },
-    { id: "cat", e: "\u{1F408}", t: "\u05DC\u05E6\u05DC\u05DD \u05D7\u05EA\u05D5\u05DC \u05D0\u05EA\u05D5\u05E0\u05D0\u05D9. \u05D1\u05D5\u05E0\u05D5\u05E1 \u05DB\u05D1\u05D5\u05D3: \u05DC\u05EA\u05EA \u05DC\u05D5 \u05E9\u05DD \u05E9\u05DC \u05D0\u05DC \u05D9\u05D5\u05D5\u05E0\u05D9", p: 5 },
-    { id: "gelato", e: "\u{1F366}", t: "\u05DC\u05DE\u05E6\u05D5\u05D0 \u05D0\u05EA \u05D4\u05D2\u05DC\u05D9\u05D3\u05E8\u05D9\u05D4 \u05D4\u05DB\u05D9 \u05D8\u05D5\u05D1\u05D4 \u05D1\u05E2\u05D9\u05E8 \u05D5\u05DC\u05E7\u05D9\u05D9\u05DD \u05D4\u05E6\u05D1\u05E2\u05D4 \u05DE\u05E9\u05E4\u05D7\u05EA\u05D9\u05EA \u05E8\u05E9\u05DE\u05D9\u05EA", p: 10 },
-    { id: "sunset", e: "\u{1F305}", t: "\u05EA\u05DE\u05D5\u05E0\u05EA \u05E9\u05E7\u05D9\u05E2\u05D4 \u05DE\u05E9\u05E4\u05D7\u05EA\u05D9\u05EA - \u05DE\u05D9\u05E9\u05D4\u05D5 \u05D7\u05D9\u05D9\u05D1 \u05DC\u05E7\u05E4\u05D5\u05E5 \u05D1\u05D0\u05D5\u05D5\u05D9\u05E8", p: 15 },
-    { id: "eye", e: "\u{1F9FF}", t: "\u05DC\u05DE\u05E6\u05D5\u05D0 \u05DE\u05D6\u05DB\u05E8\u05EA \u05E2\u05DD \u05E2\u05D9\u05DF \u05DB\u05D7\u05D5\u05DC\u05D4 \u05E0\u05D2\u05D3 \u05E2\u05D9\u05DF \u05D4\u05E8\u05E2", p: 5 },
-    { id: "tram", e: "\u{1F68B}", t: "\u05DC\u05E0\u05E1\u05D5\u05E2 \u05D1\u05EA\u05D7\u05D1\u05D5\u05E8\u05D4 \u05E6\u05D9\u05D1\u05D5\u05E8\u05D9\u05EA \u05DB\u05DE\u05D5 \u05DE\u05E7\u05D5\u05DE\u05D9\u05D9\u05DD \u05D0\u05DE\u05D9\u05EA\u05D9\u05D9\u05DD", p: 10 },
-    { id: "hello", e: "\u{1F44B}", t: '\u05DC\u05D5\u05DE\u05E8 "\u05D9\u05D0 \u05E1\u05D5" \u05DC\u05DE\u05D9\u05E9\u05D4\u05D5 \u05DE\u05E7\u05D5\u05DE\u05D9 \u05D5\u05DC\u05E7\u05D1\u05DC \u05D7\u05D9\u05D5\u05DA \u05D1\u05D7\u05D6\u05E8\u05D4', p: 10 },
-    { id: "pool", e: "\u{1F3CA}", t: "\u05E6\u05DC\u05D9\u05DC\u05D4 \u05DE\u05E1\u05D5\u05E0\u05DB\u05E8\u05E0\u05EA \u05E9\u05DC \u05DB\u05DC \u05D4\u05DE\u05E9\u05E4\u05D7\u05D4 \u05DC\u05D1\u05E8\u05D9\u05DB\u05D4. \u05EA\u05D9\u05E2\u05D5\u05D3 \u05D0\u05D5 \u05E9\u05DC\u05D0 \u05E7\u05E8\u05D4!", p: 15 }
+    { id: "statue", e: "\u{1F5FF}", t: "תמונה משפחתית עם פסל - כולם מחקים את התנוחה שלו!", p: 10 },
+    { id: "souvlaki", e: "\u{1F959}", t: "להזמין סובלאקי ביוונית בלי לגמגם (או לפחות לנסות ממש חזק)", p: 15 },
+    { id: "olive", e: "\u{1FAD2}", t: "לטעום זית יווני בלי לעשות פרצוף. בכלל לא קל.", p: 5 },
+    { id: "cat", e: "\u{1F408}", t: "לצלם חתול אתונאי. בונוס כבוד: לתת לו שם של אל יווני", p: 5 },
+    { id: "gelato", e: "\u{1F366}", t: "למצוא את הגלידריה הכי טובה בעיר ולקיים הצבעה משפחתית רשמית", p: 10 },
+    { id: "sunset", e: "\u{1F305}", t: "תמונת שקיעה משפחתית - מישהו חייב לקפוץ באוויר", p: 15 },
+    { id: "eye", e: "\u{1F9FF}", t: "למצוא מזכרת עם עין כחולה נגד עין הרע", p: 5 },
+    { id: "tram", e: "\u{1F68B}", t: "לנסוע בתחבורה ציבורית כמו מקומיים אמיתיים", p: 10 },
+    { id: "hello", e: "\u{1F44B}", t: 'לומר "יא סו" למישהו מקומי ולקבל חיוך בחזרה', p: 10 },
+    { id: "pool", e: "\u{1F3CA}", t: "צלילה מסונכרנת של כל המשפחה לבריכה. תיעוד או שלא קרה!", p: 15 }
   ];
   function Hunt() {
     const [done, setDone, saved] = iu("hunt.v1", {});
@@ -12736,18 +12736,18 @@ ${text.trim()}`;
       if (saved.ready) setDone({ ...done, [id]: !done[id] });
     };
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "\u05DE\u05E9\u05D9\u05DE\u05D5\u05EA \u05DC\u05D8\u05D9\u05D5\u05DC \u05E2\u05E6\u05DE\u05D5! \u05DB\u05DC \u05DE\u05E9\u05D9\u05DE\u05D4 \u05DE\u05D5\u05E1\u05D9\u05E4\u05D4 \u05E0\u05E7\u05D5\u05D3\u05D5\u05EA \u05DC\u05DE\u05E9\u05E4\u05D7\u05D4. \u05DE\u05E1\u05DE\u05E0\u05D9\u05DD \u05E8\u05E7 \u05E2\u05DD \u05EA\u05D9\u05E2\u05D5\u05D3, \u05D5\u05D1\u05DE\u05E7\u05E8\u05D4 \u05E9\u05DC \u05D5\u05D9\u05DB\u05D5\u05D7 - \u05D4\u05D4\u05E0\u05D4\u05DC\u05D4 \u05DE\u05DB\u05E8\u05D9\u05E2\u05D4 \u{1F604} \u05D4\u05E1\u05D9\u05DE\u05D5\u05DF \u05E0\u05E9\u05DE\u05E8 \u05D1\u05DE\u05DB\u05E9\u05D9\u05E8 \u05D4\u05D6\u05D4." }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "משימות לטיול עצמו! כל משימה מוסיפה נקודות למשפחה. מסמנים רק עם תיעוד, ובמקרה של ויכוח - ההנהלה מכריעה \u{1F604} הסימון נשמר במכשיר הזה." }),
       /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "hunt-score", children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("span", { className: "hunt-pts", children: [
           "\u{1F48E} ",
           pts,
-          " \u05DE\u05EA\u05D5\u05DA ",
+          " מתוך ",
           max,
-          " \u05E0\u05E7\u05D5\u05D3\u05D5\u05EA"
+          " נקודות"
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "hunt-bar", children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { style: { width: `${pts / max * 100}%` } }) })
       ] }),
-      pts === max && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-big", children: "\u05D5\u05D5\u05D0\u05D5! \u05DB\u05DC \u05D4\u05D0\u05D5\u05E6\u05E8\u05D5\u05EA \u05E0\u05DE\u05E6\u05D0\u05D5! \u05D0\u05EA\u05D5\u05E0\u05D4 \u05E8\u05E9\u05DE\u05D9\u05EA \u05E9\u05DC\u05E0\u05D5 \u{1F3C6}" }),
+      pts === max && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-big", children: "וואו! כל האוצרות נמצאו! אתונה רשמית שלנו \u{1F3C6}" }),
       MISSIONS.map((m) => /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("button", { className: "hunt-m" + (done[m.id] ? " ok" : ""), onClick: () => toggle(m.id), "aria-pressed": !!done[m.id], children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "hunt-e", children: m.e }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "hunt-t", children: m.t }),
@@ -12756,22 +12756,22 @@ ${text.trim()}`;
     ] });
   }
   var dict = [
-    { g: "\u0393\u03B5\u03B9\u03B1 \u03C3\u03BF\u03C5", t: "\u05D9\u05D0\u05B7 \u05E1\u05D5\u05BC", h: "\u05E9\u05DC\u05D5\u05DD" },
-    { g: "\u039A\u03B1\u03BB\u03B7\u03BC\u03AD\u03C1\u03B1", t: "\u05E7\u05B8\u05DC\u05B4\u05D9\u05DE\u05B6\u05E8\u05B8\u05D4", h: "\u05D1\u05D5\u05E7\u05E8 \u05D8\u05D5\u05D1" },
-    { g: "\u039A\u03B1\u03BB\u03B7\u03BD\u03CD\u03C7\u03C4\u03B1", t: "\u05E7\u05B8\u05DC\u05B4\u05D9\u05E0\u05B4\u05D9\u05D7\u05B0\u05EA\u05B8\u05D4", h: "\u05DC\u05D9\u05DC\u05D4 \u05D8\u05D5\u05D1" },
-    { g: "\u0395\u03C5\u03C7\u03B1\u03C1\u03B9\u03C3\u03C4\u03CE \u03C0\u03BF\u03BB\u03CD", t: "\u05D0\u05B6\u05E4\u05B0\u05D7\u05B8\u05E8\u05B4\u05D9\u05E1\u05B0\u05EA\u05D5\u05B9 \u05E4\u05BC\u05D5\u05B9\u05DC\u05B4\u05D9", h: "\u05EA\u05D5\u05D3\u05D4 \u05E8\u05D1\u05D4" },
-    { g: "\u03A0\u03B1\u03C1\u03B1\u03BA\u03B1\u03BB\u03CE", t: "\u05E4\u05B8\u05BC\u05E8\u05B8\u05E7\u05B8\u05DC\u05D5\u05B9", h: "\u05D1\u05D1\u05E7\u05E9\u05D4" },
-    { g: "\u039D\u03B1\u03B9", t: "\u05E0\u05B6\u05D4", h: "\u05DB\u05DF" },
-    { g: "\u038C\u03C7\u03B9", t: "\u05D0\u05D5\u05B9\u05D7\u05B4\u05D9", h: "\u05DC\u05D0" },
-    { g: "\u039D\u03B5\u03C1\u03CC", t: "\u05E0\u05B6\u05E8\u05D5\u05B9", h: "\u05DE\u05D9\u05DD" },
-    { g: "\u03A0\u03B1\u03B3\u03C9\u03C4\u03CC", t: "\u05E4\u05B8\u05BC\u05D2\u05D5\u05B9\u05D8\u05D5\u05B9", h: "\u05D2\u05DC\u05D9\u05D3\u05D4" },
-    { g: "\u03A3\u03BF\u03C5\u03B2\u03BB\u03AC\u03BA\u03B9", t: "\u05E1\u05D5\u05BC\u05D1\u05B0\u05DC\u05B8\u05E7\u05B4\u05D9", h: "\u05E1\u05D5\u05D1\u05DC\u05D0\u05E7\u05D9" },
-    { g: "\u03A0\u03CC\u03C3\u03BF \u03BA\u03AC\u03BD\u03B5\u03B9;", t: "\u05E4\u05BC\u05D5\u05B9\u05E1\u05D5\u05B9 \u05E7\u05B8\u05E0\u05B4\u05D9?", h: "\u05DB\u05DE\u05D4 \u05D6\u05D4 \u05E2\u05D5\u05DC\u05D4?" },
-    { g: "\u039F \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03CC\u03C2", t: "\u05D0\u05D5\u05B9 \u05DC\u05D5\u05B9\u05D2\u05B8\u05E8\u05B0\u05D9\u05B7\u05D6\u05B0\u05DE\u05D5\u05B9\u05E1", h: "\u05D4\u05D7\u05E9\u05D1\u05D5\u05DF, \u05D1\u05D1\u05E7\u05E9\u05D4" },
-    { g: "\u03A0\u03B1\u03C1\u03B1\u03BB\u03AF\u03B1", t: "\u05E4\u05B8\u05BC\u05E8\u05B8\u05DC\u05B4\u05D9\u05B8\u05BC\u05D4", h: "\u05D7\u05D5\u05E3 \u05D9\u05DD" },
-    { g: "\u03A9\u03C1\u03B1\u03AF\u03BF!", t: "\u05D0\u05D5\u05B9\u05E8\u05B6\u05D0\u05D5\u05B9!", h: "\u05D9\u05E9! / \u05D9\u05E4\u05D4!" },
-    { g: "\u0391\u03B3\u03AC\u03C0\u03B7", t: "\u05D0\u05B8\u05D2\u05B8\u05D0\u05E4\u05B4\u05BC\u05D9", h: "\u05D0\u05D4\u05D1\u05D4" },
-    { g: "\u038C\u03C0\u03B1!", t: "\u05D0\u05D5\u05B9\u05E4\u05B8\u05BC\u05D4!", h: "\u05D0\u05D5\u05E4\u05D4! (\u05E6\u05D4\u05DC\u05EA \u05E9\u05DE\u05D7\u05D4)" }
+    { g: "\u0393\u03B5\u03B9\u03B1 \u03C3\u03BF\u03C5", t: "יאַ סוּ", h: "שלום" },
+    { g: "\u039A\u03B1\u03BB\u03B7\u03BC\u03AD\u03C1\u03B1", t: "קָלִימֶרָה", h: "בוקר טוב" },
+    { g: "\u039A\u03B1\u03BB\u03B7\u03BD\u03CD\u03C7\u03C4\u03B1", t: "קָלִינִיחְתָה", h: "לילה טוב" },
+    { g: "\u0395\u03C5\u03C7\u03B1\u03C1\u03B9\u03C3\u03C4\u03CE \u03C0\u03BF\u03BB\u03CD", t: "אֶפְחָרִיסְתוֹ פּוֹלִי", h: "תודה רבה" },
+    { g: "\u03A0\u03B1\u03C1\u03B1\u03BA\u03B1\u03BB\u03CE", t: "פָּרָקָלוֹ", h: "בבקשה" },
+    { g: "\u039D\u03B1\u03B9", t: "נֶה", h: "כן" },
+    { g: "\u038C\u03C7\u03B9", t: "אוֹחִי", h: "לא" },
+    { g: "\u039D\u03B5\u03C1\u03CC", t: "נֶרוֹ", h: "מים" },
+    { g: "\u03A0\u03B1\u03B3\u03C9\u03C4\u03CC", t: "פָּגוֹטוֹ", h: "גלידה" },
+    { g: "\u03A3\u03BF\u03C5\u03B2\u03BB\u03AC\u03BA\u03B9", t: "סוּבְלָקִי", h: "סובלאקי" },
+    { g: "\u03A0\u03CC\u03C3\u03BF \u03BA\u03AC\u03BD\u03B5\u03B9;", t: "פּוֹסוֹ קָנִי?", h: "כמה זה עולה?" },
+    { g: "\u039F \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03CC\u03C2", t: "אוֹ לוֹגָרְיַזְמוֹס", h: "החשבון, בבקשה" },
+    { g: "\u03A0\u03B1\u03C1\u03B1\u03BB\u03AF\u03B1", t: "פָּרָלִיָּה", h: "חוף ים" },
+    { g: "\u03A9\u03C1\u03B1\u03AF\u03BF!", t: "אוֹרֶאוֹ!", h: "יש! / יפה!" },
+    { g: "\u0391\u03B3\u03AC\u03C0\u03B7", t: "אָגָאפִּי", h: "אהבה" },
+    { g: "\u038C\u03C0\u03B1!", t: "אוֹפָּה!", h: "אופה! (צהלת שמחה)" }
   ];
   function greekVoice() {
     try {
@@ -12828,8 +12828,8 @@ ${text.trim()}`;
       }
     };
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "gm", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "\u05DC\u05D7\u05E6\u05D5 \u05E2\u05DC \u05DE\u05D9\u05DC\u05D4 \u05DB\u05D3\u05D9 \u05DC\u05E9\u05DE\u05D5\u05E2 \u05D0\u05D5\u05EA\u05D4 \u05D1\u05D9\u05D5\u05D5\u05E0\u05D9\u05EA. \u05D4\u05D4\u05D2\u05D9\u05D9\u05D4 \u05D1\u05E2\u05D1\u05E8\u05D9\u05EA \u05DC\u05DE\u05D8\u05D4, \u05D0\u05D6 \u05D0\u05E4\u05E9\u05E8 \u05D2\u05DD \u05DC\u05EA\u05E8\u05D2\u05DC \u05D1\u05E7\u05D5\u05DC!" }),
-      noVoice && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-fb", children: "\u05D1\u05DE\u05DB\u05E9\u05D9\u05E8 \u05D4\u05D6\u05D4 \u05DC\u05D0 \u05DE\u05E6\u05D0\u05E0\u05D5 \u05E7\u05D5\u05DC \u05D9\u05D5\u05D5\u05E0\u05D9 \u05DC\u05D4\u05E9\u05DE\u05E2\u05D4, \u05D0\u05D6 \u05D4\u05D4\u05D2\u05D9\u05D9\u05D4 \u05DE\u05D5\u05D3\u05D2\u05E9\u05EA \u05DC\u05DE\u05D8\u05D4 - \u05E7\u05E8\u05D0\u05D5 \u05D0\u05D5\u05EA\u05D4 \u05D1\u05E7\u05D5\u05DC, \u05D6\u05D4 \u05E2\u05D5\u05D1\u05D3 \u05DE\u05E2\u05D5\u05DC\u05D4 \u{1F604}" }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-meta", children: "לחצו על מילה כדי לשמוע אותה ביוונית. ההגייה בעברית למטה, אז אפשר גם לתרגל בקול!" }),
+      noVoice && /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-fb", children: "במכשיר הזה לא מצאנו קול יווני להשמעה, אז ההגייה מודגשת למטה - קראו אותה בקול, זה עובד מעולה \u{1F604}" }),
       /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "dict-grid", children: dict.map((w, k2) => /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("button", { className: "dict-w" + (speaking === k2 ? " say" : ""), onClick: () => say(k2), children: [
         /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("span", { className: "dict-top", children: [
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("span", { className: "dict-g", dir: "ltr", children: w.g }),
@@ -12841,7 +12841,7 @@ ${text.trim()}`;
     ] });
   }
   function Games() {
-    const tabs = ["\u05D7\u05D9\u05D3\u05D5\u05DF", "\u05D6\u05D5\u05D2\u05D5\u05EA", "\u05D0\u05D2\u05D3\u05D5\u05EA", "\u05D9\u05D5\u05D5\u05E0\u05D9\u05EA"];
+    const tabs = ["חידון", "זוגות", "אגדות", "יוונית"];
     const [t, setT] = (0, import_react23.useState)(0);
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(import_jsx_runtime21.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "gm-tabs", role: "tablist", children: tabs.map((x, k2) => /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { role: "tab", "aria-selected": t === k2, className: t === k2 ? "on" : "", onClick: () => setT(k2), children: x }, k2)) }),
@@ -12855,65 +12855,67 @@ ${text.trim()}`;
     return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { dir: "rtl", lang: "he", className: "rtl", children: [
       /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Confetti, {}),
       /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Nu, { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Uu, { title: "\u05DE\u05E9\u05E4\u05D7\u05EA \u05D1\u05E8\u05D5\u05DB\u05D9\u05DD: \u05D9\u05D5\u05D5\u05DF 2027 \u{1F1EC}\u{1F1F7}",  }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Uu, { title: "משפחת ברוכים: יוון 2027 \u{1F1EC}\u{1F1F7}",  }),
         /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Countdown, {}),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "\u05D1\u05E8\u05D5\u05DB\u05D9\u05DD \u05D4\u05D1\u05D0\u05D9\u05DD \u{1F499}", heading: true, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Xu, { children: ["\u05D9\u05D0\u05DE\u05D0\u05E1 \u05DE\u05E9\u05E4\u05D7\u05EA \u05D1\u05E8\u05D5\u05DB\u05D9\u05DD! \u{1F1EC}\u{1F1F7}", (0, import_jsx_runtime21.jsx)("br", {}), "\u05D6\u05D4\u05D5, \u05D4\u05E1\u05E4\u05D9\u05E8\u05D4 \u05DC\u05D0\u05D7\u05D5\u05E8 \u05D4\u05EA\u05D7\u05D9\u05DC\u05D4: \u05E9\u05DE\u05E9, \u05D9\u05DD, \u05E1\u05D5\u05D1\u05DC\u05D0\u05E7\u05D9 \u05D5\u05DB\u05D5\u05DC\u05E0\u05D5 \u05D1\u05D9\u05D7\u05D3. \u05DB\u05D0\u05DF \u05EA\u05DE\u05E6\u05D0\u05D5 \u05E1\u05E4\u05D9\u05E8\u05D4 \u05DC\u05D0\u05D7\u05D5\u05E8 \u05E2\u05D3 \u05E9\u05D4\u05DE\u05D8\u05D5\u05E1 \u05DE\u05DE\u05E8\u05D9\u05D0, \u05D4\u05E6\u05D1\u05E2\u05D4 \u05E2\u05DC \u05DE\u05D4 \u05D4\u05DB\u05D9 \u05D1\u05D0 \u05DC\u05DB\u05DD, \u05E7\u05D9\u05E8 \u05E4\u05EA\u05E7\u05D9\u05DD \u05DE\u05E9\u05E4\u05D7\u05EA\u05D9, \u05D1\u05E7\u05E9\u05D5\u05EA \u05DC\u05D4\u05E0\u05D4\u05DC\u05D4 (\u05DC\u05D0 \u05DC\u05D4\u05EA\u05D1\u05D9\u05D9\u05E9 \u{1F604}) \u05D5\u05DE\u05E9\u05D7\u05E7\u05D9\u05DD \u05D5\u05DE\u05D9\u05DC\u05D9\u05DD \u05D1\u05D9\u05D5\u05D5\u05E0\u05D9\u05EA. \u05D0\u05D5\u05B9\u05E4\u05B8\u05D4, \u05D9\u05D5\u05E6\u05D0\u05D9\u05DD \u05DC\u05D3\u05E8\u05DA!"] }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "ברוכים הבאים \u{1F499}", heading: true, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Xu, { children: ["יאמאס משפחת ברוכים! \u{1F1EC}\u{1F1F7}", (0, import_jsx_runtime21.jsx)("br", {}), "זהו, הספירה לאחור התחילה: שמש, ים, סובלאקי וכולנו ביחד. כאן תמצאו ספירה לאחור עד שהמטוס ממריא, הצבעה על מה הכי בא לכם, קיר פתקים משפחתי, בקשות להנהלה (לא להתבייש \u{1F604}) ומשחקים ומילים ביוונית. אוֹפָה, יוצאים לדרך!"] }),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Music, {}),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("figure", { className: "fam-photo", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("img", { src: family_rooftop_default, alt: "\u05EA\u05DE\u05D5\u05E0\u05EA \u05E0\u05D5\u05E1\u05D8\u05DC\u05D2\u05D9\u05D4 \u05DE\u05E9\u05E4\u05D7\u05EA\u05D9\u05EA: \u05D9\u05DC\u05D3\u05D9\u05DD \u05DE\u05E9\u05E4\u05E8\u05D9\u05E6\u05D9\u05DD \u05D1\u05DE\u05D9\u05DD \u05D1\u05D1\u05E8\u05D9\u05DB\u05D4 \u05E7\u05D8\u05E0\u05D4 \u05E2\u05DC \u05D4\u05D2\u05D2", loading: "lazy" }),
-            /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("figcaption", { children: "\u05D6\u05DB\u05E8\u05D5\u05E0\u05D5\u05EA \u{1F499} \u05DB\u05DB\u05D4 \u05D6\u05D4 \u05E0\u05E8\u05D0\u05D4 \u05DB\u05E9\u05DB\u05DC \u05D4\u05DE\u05E9\u05E4\u05D7\u05D4 \u05D1\u05D9\u05D7\u05D3 \u05D1\u05E7\u05D9\u05E5" })
+            /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("img", { src: family_rooftop_default, alt: "תמונת נוסטלגיה משפחתית: ילדים משפריצים במים בבריכה קטנה על הגג", loading: "lazy" }),
+            /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("figcaption", { children: "זכרונות \u{1F499} ככה זה נראה כשכל המשפחה ביחד בקיץ" })
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("figure", { className: "fam-photo bouzouki-poster", children: [
             /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("img", { src: bouzouki_default, alt: "אור כנגן הבוזוקי היווני יאסו מתיפטוס", loading: "lazy" }),
             /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("figcaption", { children: "יאסו מתיפטוס 🎶 נגן הבוזוקי הרשמי של הטיול" })
           ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "\u05D4\u05D8\u05D9\u05E1\u05D5\u05EA \u2708\uFE0F", heading: true, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "הטיסות \u2708\uFE0F", heading: true, children: [
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Globe, {}),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Eu, { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Wu, { name: "\u05D4\u05DC\u05D5\u05DA, 3.8 - Wizz Air W4 8401", detail: "\u05EA\u05DC \u05D0\u05D1\u05D9\u05D1 12:55, \u05E0\u05D7\u05D9\u05EA\u05D4 \u05D1\u05D0\u05EA\u05D5\u05E0\u05D4 15:15 (\u05E9\u05E2\u05D5\u05DF \u05DE\u05E7\u05D5\u05DE\u05D9)" }),
-            /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Wu, { name: "\u05D4\u05DC\u05D5\u05DA, 3.8 - Aegean A3 925", detail: "\u05EA\u05DC \u05D0\u05D1\u05D9\u05D1 13:50, \u05E0\u05D7\u05D9\u05EA\u05D4 \u05D1\u05D0\u05EA\u05D5\u05E0\u05D4 16:00 (\u05E9\u05E2\u05D5\u05DF \u05DE\u05E7\u05D5\u05DE\u05D9)" }),
-            /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Wu, { name: "\u05D7\u05D6\u05E8\u05D4, 8.8", detail: "\u05D4\u05E9\u05E2\u05D5\u05EA \u05DC\u05DB\u05DC \u05E7\u05D1\u05D5\u05E6\u05D4 \u05D9\u05EA\u05D5\u05D5\u05E1\u05E4\u05D5 \u05DC\u05D0\u05D7\u05E8 \u05D0\u05D9\u05DE\u05D5\u05EA." })
+            /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Wu, { name: "הלוך, 3.8 - Wizz Air W4 8401", detail: "תל אביב 12:55, נחיתה באתונה 15:15 (שעון מקומי)" }),
+            /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Wu, { name: "הלוך, 3.8 - Aegean A3 925", detail: "תל אביב 13:50, נחיתה באתונה 16:00 (שעון מקומי)" }),
+            /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Wu, { name: "חזרה, 8.8 - Wizz Air W4 8402", detail: "אתונה 09:55, נחיתה בתל אביב 12:00 (שעון מקומי)" }),
+            /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Wu, { name: "חזרה, 8.8 - Aegean A3 924", detail: "אתונה 10:50, נחיתה בתל אביב 12:50 (שעון מקומי)" })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(_u, { children: "\u05D1\u05D0\u05D5\u05D2\u05D5\u05E1\u05D8 \u05D0\u05D9\u05DF \u05D4\u05E4\u05E8\u05E9 \u05E9\u05E2\u05D5\u05EA \u05D1\u05D9\u05DF \u05D9\u05E9\u05E8\u05D0\u05DC \u05DC\u05D9\u05D5\u05D5\u05DF." })
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(_u, { children: "באוגוסט אין הפרש שעות בין ישראל ליוון." })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "\u05D4\u05DC\u05D5\u05F4\u05D6 \u05D1\u05D8\u05D9\u05D5\u05DC \u{1F5FA}\uFE0F", heading: true, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(ju, { title: "\u05D8\u05D9\u05D5\u05D8\u05D4 \u05DE\u05D5\u05E6\u05E2\u05EA", tone: "warning", children: "\u05E2\u05D3\u05D9\u05D9\u05DF \u05DC\u05D0 \u05E7\u05D9\u05D1\u05DC\u05E0\u05D5 \u05DC\u05D5\u05F4\u05D6, \u05DC\u05D9\u05E0\u05D4 \u05D0\u05D5 \u05D4\u05D6\u05DE\u05E0\u05D5\u05EA. \u05DB\u05DC \u05DE\u05D4 \u05E9\u05DB\u05D0\u05DF \u05D4\u05D5\u05D0 \u05D4\u05E6\u05E2\u05D4 \u05DC\u05E9\u05D9\u05D7\u05D4 \u05DE\u05E9\u05E4\u05D7\u05EA\u05D9\u05EA, \u05DC\u05D0 \u05D4\u05D6\u05DE\u05E0\u05D4 \u05E7\u05D9\u05D9\u05DE\u05EA. \u05D0\u05E4\u05E9\u05E8 \u05DC\u05E9\u05E0\u05D5\u05EA \u05D4\u05DB\u05DC." }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "הלו״ז בטיול \u{1F5FA}\uFE0F", heading: true, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("p", { style: { fontWeight: "bold" }, children: "*הלו״ז של הטיול יקבע בהמשך" }),
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(ju, { title: "טיוטה מוצעת", tone: "warning", children: "עדיין לא קיבלנו לו״ז, לינה או הזמנות. כל מה שכאן הוא הצעה לשיחה משפחתית, לא הזמנה קיימת. אפשר לשנות הכל." }),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Eu, { children: days.map((d) => /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Wu, { number: d.n, name: d.name, detail: d.detail }, d.n)) }),
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Rt, { label: "\u05E8\u05E2\u05D9\u05D5\u05E0\u05D5\u05EA", layout: "strip", items: [
-            { src: plaka_default, alt: "\u05DE\u05E1\u05E2\u05D3\u05D5\u05EA \u05D1\u05E8\u05D7\u05D5\u05D1 \u05DE\u05E0\u05D9\u05E1\u05D9\u05E7\u05DC\u05D0\u05D5\u05E1 \u05D1\u05E4\u05DC\u05D0\u05E7\u05D4" },
-            { src: sounion_default, alt: "\u05DE\u05E7\u05D3\u05E9 \u05E4\u05D5\u05E1\u05D9\u05D3\u05D5\u05DF \u05D1\u05E9\u05E7\u05D9\u05E2\u05D4 \u05D1\u05E1\u05D5\u05E0\u05D9\u05D5\u05DF" },
-            { src: glyfada_default, alt: "\u05D4\u05D7\u05D5\u05E3 \u05E9\u05DC \u05D2\u05DC\u05D9\u05E4\u05D3\u05D4, \u05D4\u05E8\u05D9\u05D1\u05D9\u05D9\u05E8\u05D4 \u05E9\u05DC \u05D0\u05EA\u05D5\u05E0\u05D4" },
-            { src: souvlaki_default, alt: "\u05E1\u05D5\u05D1\u05DC\u05D0\u05E7\u05D9 \u05D1\u05DE\u05E1\u05E2\u05D3\u05D4 \u05D1\u05D0\u05EA\u05D5\u05E0\u05D4" }
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Rt, { label: "רעיונות", layout: "strip", items: [
+            { src: plaka_default, alt: "מסעדות ברחוב מניסיקלאוס בפלאקה" },
+            { src: sounion_default, alt: "מקדש פוסידון בשקיעה בסוניון" },
+            { src: glyfada_default, alt: "החוף של גליפדה, הריביירה של אתונה" },
+            { src: souvlaki_default, alt: "סובלאקי במסעדה באתונה" }
           ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "\u05DE\u05D6\u05D2 \u05D4\u05D0\u05D5\u05D5\u05D9\u05E8 \u05D4\u05E6\u05E4\u05D5\u05D9 \u2600\uFE0F", heading: true, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Xu, { children: "\u05EA\u05D7\u05D6\u05D9\u05EA \u05D0\u05DE\u05D9\u05EA\u05D9\u05EA \u05EA\u05D4\u05D9\u05D4 \u05E8\u05E7 \u05DB\u05E9\u05D1\u05D5\u05E2 \u05DC\u05E4\u05E0\u05D9. \u05E2\u05D3 \u05D0\u05D6 - \u05D4\u05DE\u05DE\u05D5\u05E6\u05E2\u05D9\u05DD \u05E9\u05DC \u05D0\u05D5\u05D2\u05D5\u05E1\u05D8 \u05D1\u05D0\u05EA\u05D5\u05E0\u05D4." }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "מזג האוויר הצפוי \u2600\uFE0F", heading: true, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Xu, { children: "תחזית אמיתית תהיה רק כשבוע לפני. עד אז - הממוצעים של אוגוסט באתונה." }),
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(ta, { items: [
-            { label: "\u{1F321}\uFE0F \u05DE\u05E7\u05E1\u05D9\u05DE\u05D5\u05DD \u05D1\u05D9\u05D5\u05DD", value: "32\xB0C \u05D1\u05DE\u05DE\u05D5\u05E6\u05E2" },
-            { label: "\u{1F319} \u05DE\u05D9\u05E0\u05D9\u05DE\u05D5\u05DD \u05D1\u05DC\u05D9\u05DC\u05D4", value: "22\xB0C \u05D1\u05DE\u05DE\u05D5\u05E6\u05E2" },
-            { label: "\u{1F327}\uFE0F \u05D2\u05E9\u05DD", value: "\u05DB\u05DE\u05E2\u05D8 \u05D0\u05D9\u05DF, \u05DB\u05DE\u05D4 \u05DE\u05F4\u05DE \u05D1\u05D7\u05D5\u05D3\u05E9" },
-            { label: "\u{1F30A} \u05D9\u05DD", value: "26\xB0C, \u05E0\u05E2\u05D9\u05DD \u05DC\u05E9\u05D7\u05D9\u05D9\u05D4" }
+            { label: "\u{1F321}\uFE0F מקסימום ביום", value: "32\xB0C בממוצע" },
+            { label: "\u{1F319} מינימום בלילה", value: "22\xB0C בממוצע" },
+            { label: "\u{1F327}\uFE0F גשם", value: "כמעט אין, כמה מ״מ בחודש" },
+            { label: "\u{1F30A} ים", value: "26\xB0C, נעים לשחייה" }
           ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "\u05E1\u05E7\u05E8 \u05DE\u05E9\u05E4\u05D7\u05EA\u05D9: \u05DE\u05D4 \u05D4\u05DB\u05D9 \u05D1\u05D0 \u05DC\u05E0\u05D5? \u{1F5F3}\uFE0F", heading: true, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "סקר משפחתי: מה הכי בא לנו? \u{1F5F3}\uFE0F", heading: true, children: [
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Poll, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(_u, { children: "\u05D4\u05E7\u05D5\u05DC\u05D5\u05EA \u05E0\u05E9\u05DE\u05E8\u05D9\u05DD \u05D1\u05E9\u05D9\u05E8\u05D5\u05EA \u05D7\u05D9\u05E6\u05D5\u05E0\u05D9 \u05E4\u05EA\u05D5\u05D7, \u05D1\u05DC\u05D9 \u05D4\u05E8\u05E9\u05DE\u05D4, \u05D5\u05DE\u05E6\u05D8\u05D1\u05E8\u05D9\u05DD \u05DE\u05DB\u05DC \u05D4\u05DE\u05DB\u05E9\u05D9\u05E8\u05D9\u05DD." })
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(_u, { children: "הקולות נשמרים בשירות חיצוני פתוח, בלי הרשמה, ומצטברים מכל המכשירים." })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "\u05E7\u05D9\u05E8 \u05D4\u05E4\u05EA\u05E7\u05D9\u05DD \u05D4\u05DE\u05E9\u05E4\u05D7\u05EA\u05D9 \u{1F4CC}", heading: true, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "קיר הפתקים המשפחתי \u{1F4CC}", heading: true, children: [
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Wall, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(_u, { children: "\u05D4\u05E4\u05EA\u05E7\u05D9\u05DD \u05E0\u05E9\u05DE\u05E8\u05D9\u05DD \u05D1\u05E2\u05E0\u05DF \u05D4\u05DE\u05E9\u05E4\u05D7\u05EA\u05D9 \u05D5\u05DE\u05D5\u05E6\u05D2\u05D9\u05DD \u05DC\u05DB\u05DC \u05DE\u05D9 \u05E9\u05E0\u05DB\u05E0\u05E1 \u05DC\u05E2\u05DE\u05D5\u05D3." })
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(_u, { children: "הפתקים נשמרים בענן המשפחתי ומוצגים לכל מי שנכנס לעמוד." })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "\u05D1\u05E7\u05E9\u05D5\u05EA \u05DE\u05D9\u05D5\u05D7\u05D3\u05D5\u05EA \u05DC\u05D4\u05E0\u05D4\u05DC\u05D4 \u{1F4EE}", heading: true, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Vu, { label: "בקשות מיוחדות להנהלה \u{1F4EE}", heading: true, children: [
           /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Requests, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(_u, { children: "\u05D1\u05DC\u05D9 \u05D4\u05E8\u05E9\u05DE\u05D4 \u05D5\u05D1\u05DC\u05D9 \u05D0\u05E4\u05DC\u05D9\u05E7\u05E6\u05D9\u05D4. \u05D4\u05D1\u05E7\u05E9\u05D4 \u05E0\u05E9\u05DC\u05D7\u05EA \u05D9\u05E9\u05D9\u05E8\u05D5\u05EA \u05DC\u05D4\u05E0\u05D4\u05DC\u05D4 \u05D5\u05DE\u05D2\u05D9\u05E2\u05D4 \u05DC\u05D0\u05D5\u05E8 \u05D3\u05E8\u05DA \u05D4\u05E2\u05D5\u05D6\u05E8 \u05D4\u05D0\u05D9\u05E9\u05D9 \u05E9\u05DC\u05D5." })
+          /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(_u, { children: "בלי הרשמה ובלי אפליקציה. הבקשה נשלחת ישירות להנהלה ומגיעה לאור דרך העוזר האישי שלו." })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "\u05E4\u05D9\u05E0\u05EA \u05D4\u05D9\u05DC\u05D3\u05D9\u05DD (\u05D2\u05DD \u05DE\u05D1\u05D5\u05D2\u05E8\u05D9\u05DD \u05D9\u05DB\u05D5\u05DC\u05D9\u05DD \u{1F929}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Games, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "\u05D3\u05E8\u05DB\u05D5\u05DF \u05D4\u05D9\u05DC\u05D3\u05D9\u05DD \u05DC\u05D9\u05D5\u05D5\u05DF \u{1F6C2}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Passport, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "\u05E6\u05D9\u05D3 \u05D4\u05D0\u05D5\u05E6\u05E8\u05D5\u05EA \u05E9\u05DC \u05D0\u05EA\u05D5\u05E0\u05D4 \u{1F48E}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Hunt, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "\u05DE\u05D4 \u05E6\u05E8\u05D9\u05DA \u05DC\u05D4\u05D1\u05D9\u05D0 \u{1F392}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Packing, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(es, { children: "\u05D4\u05DC\u05D5\u05F4\u05D6 \u05D5\u05D4\u05D8\u05D9\u05E1\u05D5\u05EA \u05D7\u05D6\u05E8\u05D4 \u05D9\u05E2\u05D5\u05D3\u05DB\u05E0\u05D5 \u05DB\u05E9\u05D9\u05D4\u05D9\u05D5 \u05E4\u05E8\u05D8\u05D9\u05DD \u05DE\u05D0\u05D5\u05E9\u05E8\u05D9\u05DD. \u05E0\u05EA\u05E8\u05D0\u05D4 \u05D1\u05E9\u05DE\u05D9\u05D9\u05DD! \u{1F1EC}\u{1F1F7}" })
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "פינת הילדים (גם מבוגרים יכולים \u{1F929})", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Games, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "דרכון הילדים ליוון \u{1F6C2}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Passport, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "ציד האוצרות של אתונה \u{1F48E}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Hunt, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Vu, { label: "מה צריך להביא \u{1F392}", heading: true, children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Packing, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(es, { children: "הלו״ז המלא יעודכן כשיהיו פרטים מאושרים. נתראה בשמיים! \u{1F1EC}\u{1F1F7}" })
       ] })
     ] });
   }
